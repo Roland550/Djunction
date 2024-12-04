@@ -1,0 +1,146 @@
+.product-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+    padding: 10px;
+    width: 100%;
+    background: #f8f9fa; 
+}
+.pro_container{
+    border: 1px solid #ccc;
+  border-radius: "8px";
+  padding: 10px;
+  text-align: center;
+  width: 230px;
+  
+}
+
+.pro_container img{
+    width: 100%;
+  height: 150px;
+  object-fit: "cover" 
+}
+.pro_container h3{
+  text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.pro_container .pro_price{
+    
+    font-size: 14px;
+    font-weight: 500;
+    /* margin-bottom: 5px; */
+    /* color: #4CAF50; */
+    text-align: left;
+}
+.pro_container .pro_price span{
+    
+    font-size: 14px;
+    font-weight: 700;
+    /* margin-bottom: 5px; */
+    /* color: #4CAF50; */
+    text-align: left;
+}
+
+.pro_container .pro_desc{
+    
+    font-size: 12px;
+    /* margin-bottom: 8px; */
+    text-align: left;
+}
+.pro_container .learn_more{
+    background: transparent; 
+    color: #4CAF50;
+    padding: 5px 10px;
+    border: 1px solid #4CAF50;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.pro_container .pro_contact{
+    background: #4CAF50; 
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #4CAF50;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.description-popup{
+    position: fixed;
+    top: 0;
+   
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgb(0, 0, 0, 0.5);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.content{
+    width: 70%;
+    height: auto;
+    padding: 0.5rem;
+    margin: 5px;
+    background: #f8f9fa;
+    
+    
+}
+.content p{
+    font-weight: 500;
+    padding: 1rem;
+}
+.content button{
+    background: transparent; 
+    color: #4CAF50;
+    padding: 5px 10px;
+    border: 1px solid #4CAF50;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1024px) { 
+   
+     
+} 
+ 
+@media only screen and (max-width: 600px) { 
+    
+    .product-card{
+        display: grid;
+       
+        grid-template-columns: repeat(1, 1fr);
+        gap: 13px;
+        padding: 10px;
+        width: 100%;
+        background: #f8f9fa; 
+    }
+    .pro_container{
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+      border-radius: "8px";
+      padding: 10px;
+      text-align: center;
+
+      width: 240px;
+      margin: 0 auto;
+      
+    }
+}

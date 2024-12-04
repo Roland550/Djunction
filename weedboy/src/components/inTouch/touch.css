@@ -1,0 +1,67 @@
+
+.container_touch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_touch{
+    font-size: 2rem;
+    text-align: center;
+    color: #276221;
+   
+    
+    font-family:"Pacifico", sans-serif;
+}
+
+.icon{
+    margin: 1rem;
+}
+.icon img{
+    width: fit-content;
+    height: 80vh;
+} 
+
+
+form{
+    padding: 1rem;
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+}
+
+form input{
+    width: 300px;
+    height: 40px;
+    margin: 1rem;
+    padding-left: 0.5rem;
+    border:  1px solid #c5c5c5;
+    border-radius: 10px;
+    color: #000;
+}
+form input:last-child{
+    background: #276221;
+    color: #c5c5c5;
+    font-size: 1.5rem;
+}
+form textarea{
+    width: 300px;
+    height: 70px;
+    margin: 1rem;
+    padding: 0.5rem;
+    border:  1px solid #c5c5c5;
+    border-radius: 10px;
+    color: #000;
+}
+
+ 
+@media only screen and (max-width:1024px) { 
+    .container.testimonials__container{ 
+        width: 60%; 
+    } 
+     
+} 
+ 
+@media only screen and (max-width: 600px) { 
+    .icon{
+        display: none;
+    }
+}

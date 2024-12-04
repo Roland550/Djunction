@@ -1,0 +1,48 @@
+.footer_cont{
+    background: #216227;
+    margin-top: 1rem;
+}
+.footer{
+    
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    
+}
+
+.footer .list {
+    
+    
+   flex-direction: column;
+   color: #fff;
+   margin-top: 1.5rem;
+
+}
+
+.link{
+    color: #c5c5c5;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.footer .list ul li {
+    flex-direction: column;
+}
+
+.foot{
+   
+    
+    font-family:"Pacifico", sans-serif;
+    font-weight: bold;
+    color: #c5c5c5;
+}
+
+.copy{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: #c5c5c5;
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+header {
+  width: 100%;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8f9fa;
+  font-family: "Pacifico", sans-serif;
+  padding: 10px 20px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  display: inline-block;
+  font-weight: bold;
+  color: #276221;
+}
+
+nav ul li .active {
+  text-decoration: none;
+  color: #276221;
+  font-weight: bolder;
+  font-size: 23px;
+  padding: 10px 20px;
+
+  background-color: #f8f9fa;
+  transition: 0.3s ease;
+}
+
+nav ul li .active:hover {
+  border-bottom: #8bca84 4px solid;
+  color: #8bca84;
+}
+
+
+
+
+@media only screen and (max-width:1024px) { 
+ 
+   
+} 
+
+@media only screen and (max-width: 600px) { 
+  h1{
+    font-size: 1rem;
+  }
+  nav {
+    
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    font-family: "Pacifico", sans-serif;
+    padding: 10px 20px;
+  }
+  .list {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li {
+   
+    flex-direction: row;
+   
+    color: #276221;
+  }
+
+  nav ul li .active {
+   
+    font-weight: bolder;
+    font-size: 11px;
+    padding: 5px 10px;
+  
+    background-color: #f8f9fa;
+    transition: 0.3s ease;
+  }
+}
