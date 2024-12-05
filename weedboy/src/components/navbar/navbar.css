@@ -65,22 +65,24 @@ nav ul li .active:hover {
    
 } 
 
-@media only screen and (max-width: 600px) { 
+
+
+@media (max-width: 810px) { 
   h1{
     font-size: 1rem;
   }
   nav {
-    
+    width: 95%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f8f9fa;
     font-family: "Pacifico", sans-serif;
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
   .list {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -95,10 +97,35 @@ nav ul li .active:hover {
   nav ul li .active {
    
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 13px;
     padding: 5px 5px;
   
     background-color: #f8f9fa;
     transition: 0.3s ease;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  nav li {
+    margin-bottom: 10px;
+  }
+  nav ul li .active  {
+    font-size: 11px;
+  }
+  .logo {
+    font-size: 15px;
   }
 }

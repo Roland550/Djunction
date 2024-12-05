@@ -208,4 +208,12 @@ body.no-scroll {
     font-size: 8px;
     font-weight: bold;
   }
+  .content {
+    width: 360px;
+  
+    background: #f8f9fa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 }
