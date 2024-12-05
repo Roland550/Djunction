@@ -4,7 +4,7 @@ import Homepage from './pages/Homepage'
 import PageNotFund from './pages/PageNotFund'
 import Navbar from './components/navbar/Navbar'
 import ProductForm from './components/productForm/ProductForm'
-import ProductCard from './components/productCard/ProductCard'
+
 import Testimonial from './components/testimonial/Testimonial'
 import Touch from './components/inTouch/Touch'
 import Footer from './components/footer/Footer'
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/form" element={<ProductForm />} />
-          <Route path="/shop" element={<ProductCard/>} />
+          {/* <Route path="/shop" element={<ProductCard/>} /> */}
           <Route path="/testi" element={<Testimonial/>} />
           <Route path="/touch" element={<Touch/>} />
           <Route path="/about" element={<About/>} />
