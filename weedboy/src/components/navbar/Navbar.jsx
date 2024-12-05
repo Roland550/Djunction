@@ -16,7 +16,7 @@ export default function Navbar() {
             <li>
               <Link to="/" className="active">Home</Link>
             </li>
-            <li><Link to="/shop" className="active">Shop</Link></li>
+            <li><Link to="/card" className="active">Shop</Link></li>
             
             <li><Link to="/about" className="active">About Us</Link></li>
             <li><Link to="/contact" className="active">Contact Us</Link></li>

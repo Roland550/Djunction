@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import Navbar from "../navbar/Navbar";
+
 import "./productCard.css";
 import Av1 from "../../assets/Abemaciclib..jpg";
 import AV2 from "../../assets/Alpelisib..jpg";
@@ -20,7 +20,7 @@ import AV15 from "../../assets/avt20.jpg";
 import AV16 from "../../assets/avt21.jpg";
 import AV17 from "../../assets/avt22.jpg";
 import AV18 from "../../assets/avt23.jpg";
-import Footer from "../footer/Footer";
+
 
 const ProductCard = () => {
   const [showForm, setShowForm] = useState(false);
@@ -46,9 +46,10 @@ const ProductCard = () => {
     {
       id: 1,
       name: "Benzphetamine",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "156",
       Dclass: "",
       image: Av1,
 
@@ -57,9 +58,10 @@ const ProductCard = () => {
     {
       id: 19,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "232",
       Dclass: "",
       image: AV2,
       description: "This is product 1 description",
@@ -67,9 +69,10 @@ const ProductCard = () => {
     {
       id: 2,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "159",
       Dclass: "",
       image: AV3,
       description: "This is product 1 description",
@@ -77,9 +80,10 @@ const ProductCard = () => {
     {
       id: 3,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "68",
       Dclass: "",
       image: AV4,
       description: "This is product 1 description",
@@ -87,9 +91,10 @@ const ProductCard = () => {
     {
       id: 4,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "98",
       Dclass: "",
       image: AV5,
       description: "This is product 1 description",
@@ -100,16 +105,19 @@ const ProductCard = () => {
       Gname: "",
       Bname: "Contrave",
       Dform: "Naltrexone extended-release tablets",
+      price: "137",
       Dclass: "",
       image: AV6,
-      description: "Naltrexone and bupropion are two medications that combine to help you lose weight or maintain weight loss. A healthcare provider will recommend you take this medication with a reduced-calorie diet and exercise. The brand name of this medication is Contrave BUPROPION; NALTREXONE (byoo PROE pee on; nal TREX one) is a combination of two drugs that help you lose weight. This product is used with a reduced calorie diet and exercise. This product can also help you maintain weight loss. This medicine may be used for other purposes; ask your health care provider or pharmacist if you have questions.",
+      description:
+        "Naltrexone and bupropion are two medications that combine to help you lose weight or maintain weight loss. A healthcare provider will recommend you take this medication with a reduced-calorie diet and exercise. The brand name of this medication is Contrave BUPROPION; NALTREXONE (byoo PROE pee on; nal TREX one) is a combination of two drugs that help you lose weight. This product is used with a reduced calorie diet and exercise. This product can also help you maintain weight loss. This medicine may be used for other purposes; ask your health care provider or pharmacist if you have questions.",
     },
     {
       id: 6,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "120",
       Dclass: "",
       image: AV7,
       description: "This is product 1 description",
@@ -117,9 +125,10 @@ const ProductCard = () => {
     {
       id: 7,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "400",
       Dclass: "",
       image: AV8,
       description: "This is product 1 description",
@@ -131,8 +140,10 @@ const ProductCard = () => {
       Bname: "",
       Dform: "",
       Dclass: "",
+      price: "233",
       image: AV9,
-      description: "Insulin is an essential hormone. It helps your body turn food into energy and manages your blood sugar levels. If you have diabetes, your body can’t make enough insulin or can’t use it properly. Your healthcare provider can prescribe manufactured insulin that you take through an injection (shot), injectable pen or pump. Inhalable insulin is also an option.",
+      description:
+        "Insulin is an essential hormone. It helps your body turn food into energy and manages your blood sugar levels. If you have diabetes, your body can’t make enough insulin or can’t use it properly. Your healthcare provider can prescribe manufactured insulin that you take through an injection (shot), injectable pen or pump. Inhalable insulin is also an option.",
     },
     {
       id: 9,
@@ -141,15 +152,19 @@ const ProductCard = () => {
       Bname: "Saxenda, Victoza",
       Dform: "Subcutaneous injection",
       Dclass: "Incretin Mimetics (GLP-1 Agonists)",
+      price: "37",
       image: AV10,
-      description: "Saxenda (liraglutide) is used for weight loss and to help keep weight off once weight has been lost, it is used for obese adults or overweight adults who also have weight-related medical problems. Saxenda can be used in children aged 12 to 17 years who with obesity and who have a bodyweight above 132 pounds (60 kg). Saxenda is used together with a healthy diet and exercise.",
+      description:
+        "Saxenda (liraglutide) is used for weight loss and to help keep weight off once weight has been lost, it is used for obese adults or overweight adults who also have weight-related medical problems. Saxenda can be used in children aged 12 to 17 years who with obesity and who have a bodyweight above 132 pounds (60 kg). Saxenda is used together with a healthy diet and exercise.",
     },
     {
       id: 10,
       name: "Mounjaro ",
       Gname: " tirzepatide",
       Bname: "",
-      Dform: "injection, for subcutaneous use (2.5 mg, 5 mg, 7.5 mg, 10 mg, 12.5 mg,15 mg per 0.5 mL in single-dose pen or vial)",
+      price: "23",
+      Dform:
+        "injection, for subcutaneous use (2.5 mg, 5 mg, 7.5 mg, 10 mg, 12.5 mg,15 mg per 0.5 mL in single-dose pen or vial)",
       Dclass: "Incretin Mimetics (GLP-1 Agonists)",
       image: AV11,
       description: "This is product 1 description",
@@ -160,15 +175,18 @@ const ProductCard = () => {
       Gname: "",
       Bname: "",
       Dform: "",
+      price: "51",
       Dclass: "",
       image: AV12,
-      description: "Alli is a 60-milligram, over-the-counter version of orlistat (Xenical), a 120-milligram prescription drug. Both Alli and Xenical are meant to be used as part of a weight-loss plan, along with a low-calorie, low-fat diet and regular physical activity.",
+      description:
+        "Alli is a 60-milligram, over-the-counter version of orlistat (Xenical), a 120-milligram prescription drug. Both Alli and Xenical are meant to be used as part of a weight-loss plan, along with a low-calorie, low-fat diet and regular physical activity.",
     },
     {
       id: 12,
       name: "Ozempic",
       Gname: "semaglutide injection",
       Bname: "oh-ZEM-pick",
+      price: "10",
       Dform:
         "subcutaneous injection (0.25mg dose pen; 0.5mg dose pen; 1.0mg dose pen; 2.0 mg dose pen)",
       Dclass: " Incretin Mimetics (GLP-1 Agonists)",
@@ -179,9 +197,10 @@ const ProductCard = () => {
     {
       id: 13,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "156",
       Dclass: "",
       image: AV14,
       description: "This is product 1 description",
@@ -189,9 +208,10 @@ const ProductCard = () => {
     {
       id: 14,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "156",
       Dclass: "",
       image: AV15,
       description: "This is product 1 description",
@@ -199,9 +219,10 @@ const ProductCard = () => {
     {
       id: 15,
       name: "Product 1",
-      Gname: "$10",
+      Gname: "",
       Bname: "",
       Dform: "",
+      price: "156",
       Dclass: "",
       image: AV16,
       description: "This is product 1 description",
@@ -209,9 +230,10 @@ const ProductCard = () => {
     {
       id: 16,
       name: "pramlintide systemic (Pro)",
-      Gname: "$10",
+      Gname: "",
       Bname: "Symlin, Symlin Pen, SymlinPen 120, SymlinPen 60",
       Dform: "",
+      price: "156",
       Dclass: "",
       image: AV17,
       description:
@@ -223,6 +245,7 @@ const ProductCard = () => {
       Gname: "",
       Bname: "",
       Dform: "",
+      price: "500",
       Dclass: "",
       image: AV18,
       description: "This is product 1 description",
@@ -273,7 +296,9 @@ Hello, I am interested in your product:${selectedProduct?.name} .
     setShowDescription((prevShowDescription) => ({
       ...prevShowDescription,
       [id]: true,
+      
     }));
+    document.body.classList.add("no-scroll");
   };
 
   const handleHideDescription = (id) => {
@@ -281,28 +306,32 @@ Hello, I am interested in your product:${selectedProduct?.name} .
       ...prevShowDescription,
       [id]: false,
     }));
+    document.body.classList.remove("no-scroll");
   };
+
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, []);
 
   return (
     <>
-      <Navbar />
+      
+      
       <div className="product-card">
         {products.map((product) => (
           <div key={product.id} className="pro_container">
             <h3>{product.name}</h3>
             <img src={product.image} alt={product.name} className="pro_image" />
             <p className="pro_price">
-              <span>Generic name</span> <small>{product.Gname}</small>
-            </p>
-            <p className="pro_price">
               <span>Brand name</span> <small>{product.Bname}</small>
             </p>
             <p className="pro_price">
-              <span>Dosage form</span> <small>{product.Dform}</small>
+              <span>Price</span> <small className="co_price"> ${product.price}</small>
             </p>
-            <p className="pro_price">
-              <span>Drug class</span> <small> {product.Dclass}</small>
-            </p>
+           
+           
 
             <button
               onClick={() => handleLearnMore(product.id)}
@@ -315,12 +344,44 @@ Hello, I am interested in your product:${selectedProduct?.name} .
               Contact Seller
             </button>
             {showDescription[product.id] && (
-              <div className="description-popup">
+              <div
+                className="description-popup"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <div className="content">
-                  <p>{product.description}</p>
-                  <button onClick={() => handleHideDescription(product.id)}>
-                    Close
+                
+                  <div className="pro_header">
+                  <button onClick={() => handleHideDescription(product.id)} className="close_btn">
+                    x
                   </button>
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="pro_image"
+                    />
+                  </div>
+                  <div className="pro_body">
+                    <p className="pro_price">
+                      <p>{product.name}</p>
+                    </p>
+                    <p className="pro_price">
+                      <span>Generic name</span> <small>{product.Gname}</small>
+                    </p>
+                    <p className="pro_price">
+                      <span>Price</span> <small> ${product.Gname}</small>
+                    </p>
+                    <p className="pro_price">
+                      <span>Brand name</span> <small>{product.Bname}</small>
+                    </p>
+                    <p className="pro_price">
+                      <span>Dosage form</span> <small>{product.Dform}</small>
+                    </p>
+                    <p className="pro_price">
+                      <span>Drug class</span> <small> {product.Dclass}</small>
+                    </p>
+                    <p>{product.description}</p>
+                  </div>
+                 
                 </div>
               </div>
             )}
@@ -376,8 +437,10 @@ Hello, I am interested in your product:${selectedProduct?.name} .
           {autoReply && <p className="auto-reply">{autoReply}</p>}
         </div>
       )}
+     
+     
 
-      <Footer />
+      
     </>
   );
 };

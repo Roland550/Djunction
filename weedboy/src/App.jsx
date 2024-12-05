@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer'
 import About from './components/about/About'
 
 import Contact from './components/contact/Contact'
+import Card from './components/productCard/card'
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
           <Route path="/testi" element={<Testimonial/>} />
           <Route path="/touch" element={<Touch/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/card" element={<Card/>} />
           
           <Route path="/contact" element={<Contact/>} />
           <Route path="/footer" element={<Footer/>} />

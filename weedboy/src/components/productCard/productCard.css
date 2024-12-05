@@ -1,146 +1,211 @@
-.product-card{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 13px;
-    padding: 10px;
-    width: 100%;
-    background: #f8f9fa; 
+body.no-scroll {
+  overflow: hidden; /* Prevent scrolling on the body */
 }
-.pro_container{
-    border: 1px solid #ccc;
+
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 13px;
+  padding: 10px;
+  width: 100%;
+  background: #f8f9fa;
+}
+.pro_container {
+  border: 1px solid #ccc;
   border-radius: "8px";
   padding: 10px;
   text-align: center;
   width: 230px;
-  
+  min-height: 300px;
+  overflow-y: auto;
 }
 
-.pro_container img{
-    width: 100%;
+.pro_container img {
+  width: 100%;
   height: 150px;
-  object-fit: "cover" 
+  object-fit: "cover";
 }
-.pro_container h3{
+.pro_container h3 {
   text-align: center;
-    font-size: 16px;
-    margin-bottom: 8px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
-.pro_container .pro_price{
-    
-    font-size: 14px;
-    font-weight: 500;
-    /* margin-bottom: 5px; */
-    /* color: #4CAF50; */
-    text-align: left;
+.pro_container .pro_price {
+  font-size: 14px;
+  font-weight: 500;
+  /* margin-bottom: 5px; */
+  /* color: #4CAF50; */
+  text-align: left;
 }
-.pro_container .pro_price span{
-    
-    font-size: 14px;
-    font-weight: 700;
-    /* margin-bottom: 5px; */
-    /* color: #4CAF50; */
-    text-align: left;
+.pro_container .co_price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4caf50;
+  text-align: left;
 }
-
-.pro_container .pro_desc{
-    
-    font-size: 12px;
-    /* margin-bottom: 8px; */
-    text-align: left;
-}
-.pro_container .learn_more{
-    background: transparent; 
-    color: #4CAF50;
-    padding: 5px 10px;
-    border: 1px solid #4CAF50;
-    margin-right: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
-}
-.pro_container .pro_contact{
-    background: #4CAF50; 
-    color: #fff;
-    padding: 5px 10px;
-    border: 1px solid #4CAF50;
-    margin-right: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
+.pro_container .pro_price span {
+  font-size: 14px;
+  font-weight: 700;
+  /* margin-bottom: 5px; */
+  /* color: #4CAF50; */
+  text-align: left;
 }
 
+.pro_container .pro_desc {
+  font-size: 12px;
+  /* margin-bottom: 8px; */
+  text-align: left;
+}
+.pro_container .learn_more {
+  background: transparent;
+  color: #4caf50;
+  padding: 5px 10px;
+  border: 1px solid #4caf50;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+.pro_container .pro_contact {
+  background: #4caf50;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #4caf50;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
 
-.description-popup{
-    position: fixed;
-    top: 0;
-   
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%; 
-    height: 100%; 
-    background: rgb(0, 0, 0, 0.5);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+.description-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  z-index: 1000;
+}
+
+.content {
+  width: 400px;
+
+  background: #f8f9fa;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.content .pro_header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.content .pro_header img {
+  width: 100%;
+  height: 300px;
+
+  /* border-radius: 8px 8px 0 0; */
+  margin-bottom: 2rem;
+}
+.pro_body {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+  padding: 20px;
+  margin-top: 1rem;
+  scrollbar-width: none;
+}
+.pro_body::-webkit-scrollbar {
+  display: none;
+}
+.pro_body p {
+  font-weight: 500;
+  font-size: 12px;
+  width: 360px;
+  text-align: start;
+}
+.content button {
+  background: transparent;
+  color: #4caf50;
+  padding: 5px 10px;
+  border: 1px solid #4caf50;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.content .close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ccc;
+}
+.content .close_btn:hover {
+  color: #dc1e1e;
+  border: 2px solid #dc1e1e;
+}
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .product-card {
+    display: grid;
+
+    grid-template-columns: repeat(2,  minmax(150px, 1fr));
+    gap: 10px;
+    padding: 5px;
+    width: 100%;
+
+    background: #f8f9fa;
+  }
+  .pro_container img {
+    width: 120px;
+    height: 120px;
+    object-fit: "cover";
+  }
+  .pro_container {
     justify-content: center;
     align-items: center;
-    z-index: 999;
-}
+    border: 1px solid #ccc;
+    border-radius: "8px";
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 160px;
+    min-height: 200px;
+  }
+  .pro_container .learn_more {
+    color: #4caf50;
+    padding: 5px 5px;
 
-.content{
-    width: 70%;
-    height: auto;
-    padding: 0.5rem;
-    margin: 5px;
-    background: #f8f9fa;
-    
-    
-}
-.content p{
-    font-weight: 500;
-    padding: 1rem;
-}
-.content button{
-    background: transparent; 
-    color: #4CAF50;
-    padding: 5px 10px;
-    border: 1px solid #4CAF50;
-    margin: 10px;
+    margin-right: 5px;
+
+    font-size: 8px;
+  }
+  .pro_container .pro_contact {
+    padding: 5px 5px;
+    border: 1px solid #4caf50;
+
     border-radius: 4px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 8px;
     font-weight: bold;
-}
-
-@media only screen and (max-width:1024px) { 
-   
-     
-} 
- 
-@media only screen and (max-width: 600px) { 
-    
-    .product-card{
-        display: grid;
-       
-        grid-template-columns: repeat(1, 1fr);
-        gap: 13px;
-        padding: 10px;
-        width: 100%;
-        background: #f8f9fa; 
-    }
-    .pro_container{
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #ccc;
-      border-radius: "8px";
-      padding: 10px;
-      text-align: center;
-
-      width: 240px;
-      margin: 0 auto;
-      
-    }
+  }
 }

@@ -9,6 +9,10 @@ import Touch from "../components/inTouch/Touch";
 import Footer from "../components/footer/Footer";
 import { Link } from "react-router-dom";
 
+import ProductCard from "../components/productCard/ProductCard";
+
+
+
 export default function Homepage() {
   return (
     <>
@@ -23,13 +27,13 @@ export default function Homepage() {
             Buy drugs from a variety of different vendors
           </p>
           
-          <Link to="/shop" className="explore">Explore our shop</Link>
+          <Link to="/card" className="explore">Shop Now</Link>
         </div>
         <div className="cta">
           <img src={item} alt="" />
         </div>
       </div>
-
+ <ProductCard />
       <section className="service">
       <h3>Our service</h3>
          <div className="service_container">

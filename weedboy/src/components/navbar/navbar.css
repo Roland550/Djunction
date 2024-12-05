@@ -95,8 +95,8 @@ nav ul li .active:hover {
   nav ul li .active {
    
     font-weight: bolder;
-    font-size: 11px;
-    padding: 5px 10px;
+    font-size: 14px;
+    padding: 5px 5px;
   
     background-color: #f8f9fa;
     transition: 0.3s ease;
