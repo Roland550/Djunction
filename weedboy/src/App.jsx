@@ -11,7 +11,8 @@ import Footer from './components/footer/Footer'
 import About from './components/about/About'
 
 import Contact from './components/contact/Contact'
-import Card from './components/productCard/card'
+import Card from './components/productCard/Card'
+import ProductCard from './components/productCard/ProductCard'
 
 function App() {
   
@@ -23,7 +24,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/form" element={<ProductForm />} />
-          {/* <Route path="/shop" element={<ProductCard/>} /> */}
+          <Route path="/shop" element={<ProductCard/>} />
           <Route path="/testi" element={<Testimonial/>} />
           <Route path="/touch" element={<Touch/>} />
           <Route path="/about" element={<About/>} />
