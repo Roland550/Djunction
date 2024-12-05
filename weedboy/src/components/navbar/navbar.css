@@ -18,6 +18,7 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Pacifico", sans-serif;
 }
 nav {
   width: 100%;
@@ -26,7 +27,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: #f8f9fa;
-  font-family: "Pacifico", sans-serif;
+  
   padding: 10px 20px;
 }
 .list {
@@ -44,10 +45,10 @@ ul li {
 nav ul li .active {
   text-decoration: none;
   color: #276221;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 23px;
   padding: 10px 20px;
-
+  font-family: "Raleway", sans-serif;
   background-color: #f8f9fa;
   transition: 0.3s ease;
 }
@@ -61,7 +62,15 @@ nav ul li .active:hover {
 
 
 @media only screen and (max-width:1024px) { 
- 
+  nav ul li .active {
+   
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px 5px;
+  
+    background-color: #f8f9fa;
+    transition: 0.3s ease;
+  }
    
 } 
 
@@ -97,7 +106,7 @@ nav ul li .active:hover {
   nav ul li .active {
    
     font-weight: bolder;
-    font-size: 13px;
+    font-size: 15px;
     padding: 5px 5px;
   
     background-color: #f8f9fa;
@@ -123,7 +132,7 @@ nav ul li .active:hover {
     margin-bottom: 10px;
   }
   nav ul li .active  {
-    font-size: 11px;
+    font-size: 14px;
   }
   .logo {
     font-size: 15px;

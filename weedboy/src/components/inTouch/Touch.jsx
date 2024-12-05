@@ -4,7 +4,7 @@ import touch from "../../assets/sit.jpg"
 export default function Touch() {
   return (
    <>
-   <h1 className='title_touch'>Contact us</h1>
+  
     <div className='container_touch'>
       
       <div className="icon">

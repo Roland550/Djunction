@@ -43,6 +43,12 @@ body.no-scroll {
   color: #4caf50;
   text-align: left;
 }
+.pro_container .unit_name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
 .pro_container .pro_price span {
   font-size: 14px;
   font-weight: 700;
@@ -162,6 +168,16 @@ body.no-scroll {
   border: 2px solid #dc1e1e;
 }
 @media only screen and (max-width: 1024px) {
+  .product-card {
+    display: grid;
+
+    grid-template-columns: repeat(3,  minmax(150px, 1fr));
+    gap: 10px;
+    padding: 5px;
+    width: 100%;
+
+    background: #f8f9fa;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -215,5 +231,14 @@ body.no-scroll {
     position: relative;
     display: flex;
     flex-direction: column;
+  }
+  .content .pro_des{
+    width: 339px;
+    
+    
+  }
+  .content .pro_use{
+    width: 339px;
+
   }
 }

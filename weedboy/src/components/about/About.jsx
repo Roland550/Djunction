@@ -13,7 +13,7 @@ export default function About() {
     <div className="about-us-content">
       
         <h2>Our Mission</h2>
-        <p>At WeedJunction, we are passionate about providing the highest quality cannabis products and exceptional customer service.
+        <p>At DJunction, we are passionate about providing the highest quality cannabis products and exceptional customer service.
         Our dedication to quality and customer satisfaction has made us a trusted name in the cannabis industry.
         We believe that cannabis should be accessible to everyone, which is why we offer a wide range of products and delivery options.
         Our team is passionate about cannabis and is dedicated to helping you find the perfect product for your needs.

@@ -45,93 +45,94 @@ const ProductCard = () => {
   const products = [
     {
       id: 1,
-      name: "Benzphetamine",
+      name: "Abemaciclib",
       Gname: "",
-      Bname: "",
+      Bname: "Verzenio (Abemaciclib)",
       Dform: "",
-      price: "156",
+      price: "$1,500 to $1,600 per month",
       Dclass: "",
       image: Av1,
 
-      description: `  I am writing to recommend Roland for his network troubleshooting services. I had the pleasure of working with Raymond when I was experiencing problems with my business network. Raymond was very knowledgeable about the latest network troubleshooting techniques, and he did a great job of identifying and resolving the problems that I was experiencing. Raymond was also very patient and understanding, and he was always willing to take the time to explain the problems to me in a way that I could understand. I would highly recommend Raymond to anyone who is looking for reliable and professional network troubleshooting services.`,
+      description: `Abemaciclib is a prescription-only medication, meaning it must be prescribed by an oncologist or healthcare provider who specializes in cancer treatment. It is usually taken orally in the form of tablets, with the typical dosage being 150 mg twice daily for most patients, although this can vary based on the individual’s health condition and response to treatment`,
     },
     {
       id: 19,
-      name: "Product 1",
+      name: "Alpelisib",
       Gname: "",
-      Bname: "",
+      Bname: "Piqray",
       Dform: "",
-      price: "232",
+      price: "$14,000 per month",
       Dclass: "",
       image: AV2,
-      description: "This is product 1 description",
+      description: "Alpelisib (Piqray) is a prescription-only medication that must be prescribed by an oncologist or healthcare provider experienced in cancer treatment. It is taken as an oral tablet, typically once daily with food. The standard starting dose is usually 300 mg per day, but the dose may be adjusted based on the patient’s health status and tolerability.",
     },
     {
       id: 2,
-      name: "Product 1",
+      name: "Abraxane",
       Gname: "",
-      Bname: "",
+      Bname: "Paclitaxel Albumin-stabilized Nanoparticle Formulation",
       Dform: "",
-      price: "159",
+      price: "$2,500",
       Dclass: "",
       image: AV3,
-      description: "This is product 1 description",
+      description: "Abraxane is a prescription-only medication, and it must be administered by a healthcare provider in a clinical setting, usually through an intravenous (IV) infusion. The dosing schedule can vary based on the type of cancer being treated and the patient's overall health. For example, for metastatic breast cancer, it is typically administered as an infusion every 3 weeks.",
     },
     {
       id: 3,
-      name: "Product 1",
+      name: "Ado-Trastuzumab Emtansine",
       Gname: "",
-      Bname: "",
+      Bname: "Kadcyla (Ado-Trastuzumab Emtansine)",
       Dform: "",
-      price: "68",
+      price: "$9,000 per dose",
       Dclass: "",
       image: AV4,
-      description: "This is product 1 description",
+      description: "Ado-Trastuzumab Emtansine is a prescription-only medication and must be administered in a clinical setting under the supervision of a healthcare provider. It is given through an intravenous (IV) infusion. The dose and frequency of infusions depend on the patient's health, weight, and how well the cancer responds to the treatment.",
     },
     {
       id: 4,
-      name: "Product 1",
+      name: "Afinitor(Everolimus) Afinitor Disperz (Everolimus)  ",
       Gname: "",
-      Bname: "",
+      Bname: "Afinitor",
       Dform: "",
-      price: "98",
+      price: "$20,000 per month",
       Dclass: "",
       image: AV5,
-      description: "This is product 1 description",
+      description: "Both Afinitor and Afinitor Disperz are prescription-only medications. They are usually prescribed by oncologists or other healthcare providers for patients with cancers or other conditions where mTOR inhibition is beneficial. The medication is taken orally, typically once a day, and the dose depends on the condition being treated and the individual patient’s health status.",
     },
     {
       id: 5,
-      name: "Bupropion",
+      name: "Contrave",
       Gname: "",
       Bname: "Contrave",
-      Dform: "Naltrexone extended-release tablets",
-      price: "137",
+      Dform: "",
+      price: "$99",
       Dclass: "",
       image: AV6,
+      usage: "Naltrexone and bupropion combination is used together with a reduced-calorie diet and proper exercise to help lose weight. This medicine is used in people who are overweight or obese",
       description:
-        "Naltrexone and bupropion are two medications that combine to help you lose weight or maintain weight loss. A healthcare provider will recommend you take this medication with a reduced-calorie diet and exercise. The brand name of this medication is Contrave BUPROPION; NALTREXONE (byoo PROE pee on; nal TREX one) is a combination of two drugs that help you lose weight. This product is used with a reduced calorie diet and exercise. This product can also help you maintain weight loss. This medicine may be used for other purposes; ask your health care provider or pharmacist if you have questions.",
+        "Take this medicine by mouth with a glass of water. Follow the directions on the prescription label. Do not cut, crush or chew this medicine. Swallow the tablets whole. You can take it with or without food. Do not take with high-fat meals as this may increase your risk of seizures. Take your medicine at regular intervals. Do not take it more often than directed. Do not stop taking except on your doctor's advice.",
     },
     {
       id: 6,
-      name: "Product 1",
+      name: "metformine",
       Gname: "",
-      Bname: "",
+      Bname: "polycystic ovary syndrome (PCOS).",
       Dform: "",
-      price: "120",
-      Dclass: "",
+      price: "$4",
+      Dclass: "used to treat type 2 diabetes. It is one of the most commonly prescribed drugs for managing blood sugar levels in people with this condition.",
       image: AV7,
-      description: "This is product 1 description",
+      description: "Immediate-release metformin is usually taken 2-3 times daily with meals.",
     },
     {
       id: 7,
-      name: "Product 1",
+      name: "Abraxane",
       Gname: "",
-      Bname: "",
+      Bname: "paclitaxel albumin-bound particles",
       Dform: "",
-      price: "400",
+      price: "$2,500",
       Dclass: "",
       image: AV8,
-      description: "This is product 1 description",
+      description: "Abraxane is a prescription-only medication and must be administered by a healthcare provider in a clinical setting, typically via an intravenous (IV) infusion. The dosage and frequency of administration depend on the type of cancer being treated and the patient's overall health status.",
     },
     {
       id: 8,
@@ -147,108 +148,112 @@ const ProductCard = () => {
     },
     {
       id: 9,
-      name: "Saxenda ",
-      Gname: "liraglutide [ LIR-a-GLOO-tide ]",
+      name: "Liraglutide (Saxenda)",
+      Gname: "liraglutide",
       Bname: "Saxenda, Victoza",
-      Dform: "Subcutaneous injection",
+      Dform: "injection, solution",
       Dclass: "Incretin Mimetics (GLP-1 Agonists)",
-      price: "37",
+      price: "$95.33",
       image: AV10,
       description:
-        "Saxenda (liraglutide) is used for weight loss and to help keep weight off once weight has been lost, it is used for obese adults or overweight adults who also have weight-related medical problems. Saxenda can be used in children aged 12 to 17 years who with obesity and who have a bodyweight above 132 pounds (60 kg). Saxenda is used together with a healthy diet and exercise.",
+        "27 kg/m2 or greater (overweight) in the presence of at least one weight-related comorbid condition (e.g. hypertension, type 2 diabetes mellitus, or dyslipidemia) (1).",
     },
     {
       id: 10,
-      name: "Mounjaro ",
+      name: "Mounjaro",
       Gname: " tirzepatide",
-      Bname: "",
-      price: "23",
+      Bname: "Mounjaro",
+      price: "$1000",
       Dform:
         "injection, for subcutaneous use (2.5 mg, 5 mg, 7.5 mg, 10 mg, 12.5 mg,15 mg per 0.5 mL in single-dose pen or vial)",
       Dclass: "Incretin Mimetics (GLP-1 Agonists)",
       image: AV11,
-      description: "This is product 1 description",
+      usage: ": Mounjaro is an injectable prescription medicine that is used along with diet and exercise to improve blood sugar (glucose) in adults with type 2 diabetes mellitus.",
+      description: "You should follow the directions on your prescription label carefully and ask your pharmacist or doctor to explain any part you do not understand. It is important to use this medicine exactly as directed. Do not take more or less of it or more often than your doctor prescribes.",
     },
     {
       id: 11,
-      name: "Alli",
+      name: "Orlistat (Xenical, Alli)       ",
       Gname: "",
       Bname: "",
       Dform: "",
-      price: "51",
+      price: "$77.87",
       Dclass: "",
       image: AV12,
       description:
-        "Alli is a 60-milligram, over-the-counter version of orlistat (Xenical), a 120-milligram prescription drug. Both Alli and Xenical are meant to be used as part of a weight-loss plan, along with a low-calorie, low-fat diet and regular physical activity.",
+        "Alli has an average rating of 6.2 out of 10 from a total of 119 ratings on Drugs.com. 49% of reviewers reported a positive effect, while 31% reported a negative effect.",
     },
     {
       id: 12,
       name: "Ozempic",
       Gname: "semaglutide injection",
       Bname: "oh-ZEM-pick",
-      price: "10",
+      price: "$936",
       Dform:
         "subcutaneous injection (0.25mg dose pen; 0.5mg dose pen; 1.0mg dose pen; 2.0 mg dose pen)",
       Dclass: " Incretin Mimetics (GLP-1 Agonists)",
       image: AV13,
+      usage: "Once-weekly injection",
       description:
-        "Ozempic is used for type 2 diabetes to improve blood sugar levels and lower the risk of stroke, heart attack, or death for adults with type 2 diabetes and heart disease. Ozempic (semaglutide) has been shown to help weight loss and maintain the lost weight in clinical trials. Ozempic is given as a once-weekly injection under the skin of the belly, the thigh, or the upper arm using an autoinjector (pen).",
+        "Ozempic (semaglutide) is a prescription medication that is FDA-approved to treat type 2 diabetes in combination with diet and exercise. It’s also approved to lower the risk Ozempic (semaglutide) is a prescription medication that is FDA-approved to treat type 2 diabetes in combination with diet and exercise. It’s also approved to lower the risk  ",
     },
     {
       id: 13,
-      name: "Product 1",
+      name: "Phentermine-topiramate (Qsymia)",
       Gname: "",
-      Bname: "",
+      Bname: "phentermine / topiramate ER",
       Dform: "",
-      price: "156",
+      price: "$7.65 per unit",
       Dclass: "",
       image: AV14,
-      description: "This is product 1 description",
+      description: "Qsymia is a prescription medicine that contains phentermine and topiramate extended-release. Qsymia may help adults and children 12 years and older with obesity, or some adults with overweight who also have weight-related medical problems, to help them lose excess body weight and keep the weight off.",
     },
     {
       id: 14,
-      name: "Product 1",
+      name: "Semaglutide (Wegovy)",
       Gname: "",
-      Bname: "",
+      Bname: "Semaglutide",
       Dform: "",
-      price: "156",
+      price: "$1,300 and $1,500 per month",
       Dclass: "",
       image: AV15,
-      description: "This is product 1 description",
+      description: "Semaglutide is a prescription-only medication. It is important to consult a healthcare provider to see if it is appropriate for you, as it can have side effects and interactions with other medications. If a doctor prescribes Wegovy or Ozempic, they will typically assess factors like weight, diabetes status, and other health conditions.",
     },
     {
       id: 15,
-      name: "Product 1",
+      name: "Setmelanotide (Imcivree)",
       Gname: "",
-      Bname: "",
+      Bname: "Imcivree (Setmelanotide)",
       Dform: "",
-      price: "156",
+      price: "$300,000 to $400,000 per year",
       Dclass: "",
       image: AV16,
-      description: "This is product 1 description",
+      description: " Setmelanotide is a prescription-only medication. It is prescribed by a healthcare provider familiar with the specific genetic condition causing obesity. The medication is generally administered as a daily subcutaneous injection. The dose may vary based on the patient's condition and response to the medication.",
     },
     {
       id: 16,
-      name: "pramlintide systemic (Pro)",
-      Gname: "",
-      Bname: "Symlin, Symlin Pen, SymlinPen 120, SymlinPen 60",
+      name: "Amylinomimetic injectables",
+      Gname: "Pramlintide",
+      Bname: "Symlin",
       Dform: "",
-      price: "156",
+      price: "$75",
       Dclass: "",
       image: AV17,
+      usage: "A medication used to control blood sugar in type 1 and type 2 diabetes, typically in combination with mealtime insulin.",
       description:
-        "Amylin analogs are used in the treatment of diabetes. They are stable synthetic compounds, which are administered subcutaneously before meals, and work similarly to the physiological amylin.Amylin is a 37 amino acid polypeptide hormone that is secreted with insulin from the beta cells in the pancreas. In diabetes, as less insulin is secreted there is also a deficiency of amylin. Amylin assists insulin in postprandial glucose control. It inhibits glucagon secretion, delays gastric emptying and signals satiety, suppressing the intake of food.",
+        "Doctors prescribe different medications to treat type 1 and type 2 diabetes and help control your blood sugar. Treatment may vary depending on your diagnosis, health, and other factors.",
     },
     {
       id: 17,
-      name: "Product 1",
+      name: "Anastrozole",
       Gname: "",
-      Bname: "",
+      Bname: "Arimidex",
       Dform: "",
-      price: "500",
+      price: "$10",
       Dclass: "",
+     
       image: AV18,
-      description: "This is product 1 description",
+      description: "Anastrozole is a prescription-only medication and should be prescribed by a healthcare provider, typically an oncologist. It is usually taken as an oral tablet once a day, with or without food.",
     },
   ];
 
@@ -328,7 +333,7 @@ Hello, I am interested in your product:${selectedProduct?.name} .
               <span>Brand name</span> <small>{product.Bname}</small>
             </p>
             <p className="pro_price">
-              <span>Price</span> <small className="co_price"> ${product.price}</small>
+              <span>Price</span> <small className="co_price"> {product.price}</small>
             </p>
            
            
@@ -362,24 +367,32 @@ Hello, I am interested in your product:${selectedProduct?.name} .
                   </div>
                   <div className="pro_body">
                     <p className="pro_price">
-                      <p>{product.name}</p>
+                      <p className="unit_name">{product.name}</p>
                     </p>
+
+                    {product.Gname && <p className="pro_price">
+                      <span>Generic name </span> <small>{product.Gname}</small>
+                    </p>}
+
                     <p className="pro_price">
-                      <span>Generic name</span> <small>{product.Gname}</small>
+                      <span>Price </span> <small className="co_price"> {product.price}</small>
                     </p>
+
                     <p className="pro_price">
-                      <span>Price</span> <small> ${product.Gname}</small>
+                      <span>Brand name </span> <small>{product.Bname}</small>
                     </p>
-                    <p className="pro_price">
-                      <span>Brand name</span> <small>{product.Bname}</small>
-                    </p>
-                    <p className="pro_price">
-                      <span>Dosage form</span> <small>{product.Dform}</small>
-                    </p>
-                    <p className="pro_price">
+
+                    {product.Dform && <p className="pro_price">
+                      <span>Dosage form </span> <small>{product.Dform}</small>
+                    </p>}
+
+                    {product.Dclass && <p className="pro_price">
                       <span>Drug class</span> <small> {product.Dclass}</small>
-                    </p>
-                    <p>{product.description}</p>
+                    </p>}
+                    {product.usage && <p className="pro_use">
+                      <strong>Usage: </strong> <small>{product.usage}</small>
+                    </p>}
+                    <p className="pro_des"> <strong>Prescription: </strong>{product.description}</p>
                   </div>
                  
                 </div>

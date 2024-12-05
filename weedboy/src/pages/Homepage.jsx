@@ -1,11 +1,7 @@
 import Navbar from "../components/navbar/Navbar";
 import "./pages.css";
 import item from "../assets/pill.png";
-import discount from "../assets/disc.jpg";
-import reliable from "../assets/reliable.jpg";
-import secure from "../assets/secure.jpg";
-import Testimonial from "../components/testimonial/Testimonial";
-import Touch from "../components/inTouch/Touch";
+
 import Footer from "../components/footer/Footer";
 import { Link } from "react-router-dom";
 
@@ -19,7 +15,7 @@ export default function Homepage() {
       <Navbar />
       <div className="homepage">
         <div className="container">
-          <h1>Welcome to DrugJunction</h1>
+          <h1>Welcome to <span className="drug">DJunction</span></h1>
           <p>
             Discover the best drugs products from a curated selection of
             trusted vendors. Browse our marketplace to find the perfect strain,
@@ -34,7 +30,7 @@ export default function Homepage() {
         </div>
       </div>
  <ProductCard />
-      <section className="service">
+      {/* <section className="service">
       <h3>Our service</h3>
          <div className="service_container">
           <div className="card_service">
@@ -57,7 +53,7 @@ export default function Homepage() {
             <button type="button">Learn more</button>
           </div>
          </div>
-      </section>
+      </section> */}
 
       {/* <section className="offers">
       <h3>What our client say?</h3>
@@ -94,8 +90,8 @@ export default function Homepage() {
           </div>
         </div>
       </section> */}
-      <Testimonial />
-      <Touch />
+      
+      
       <Footer />
     </>
   );
