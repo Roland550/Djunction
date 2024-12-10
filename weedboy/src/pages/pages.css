@@ -273,6 +273,16 @@ border-radius: 8px;
     color: #276221;
     font-weight: bold;
 }
+.phone{
+    display: none;
+   
+}
+
+.phone img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 
 
  
@@ -291,7 +301,7 @@ border-radius: 8px;
     
     }
     .homepage .container h1{
-        color: #012a4a;
+        color: #fff;
         font-size: 2rem;
       
         
@@ -310,11 +320,37 @@ border-radius: 8px;
     .cta img{
        display: none;
      }
+     .cta .discount{
+        width: 150px;
+        height: 150px;
+        top: 25%;
+        
+        right: 10%;
+        
+       
+    }
      .service_container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .phone{
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+       bottom: 0;
+    }
+    
+    .phone img{
+        width: 100%;
+        
+        object-fit: cover;
+        margin-top: 2rem;
     }
     footer{
         display: none;

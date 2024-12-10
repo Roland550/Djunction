@@ -12,7 +12,7 @@
 
 .about-us-page h2{
     font-family: "Raleway", sans-serif;
-    color: #276221;
+    color: #012a4a;
     
 }
 .about-us-page .about-us-content{
@@ -20,7 +20,7 @@
    
 }
 .about-us-page .about-us-content p{
-    font-weight: 600;
+    font-weight: 400;
    
 }
 
@@ -54,20 +54,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .telegram .icon0{
     width: 200px;
-    height: 30px;
+    height: fit-content;
     text-decoration: none;
-    background: blue;
+    background: #468faf;
     color: #f2f2f2;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+}
+
+.telegram small{
+    font-size: 15px;
 }
 
 
