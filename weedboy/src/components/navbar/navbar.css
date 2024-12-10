@@ -109,7 +109,7 @@ nav ul li .active:hover {
 
   nav ul li .active {
    
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 15px;
     padding: 5px 5px;
   
@@ -137,6 +137,7 @@ nav ul li .active:hover {
   }
   nav ul li .active  {
     font-size: 14px;
+    font-weight: 600;
   }
   .logo {
     font-size: 15px;
