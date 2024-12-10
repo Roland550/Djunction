@@ -1,64 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 .homepage{
-    width: 100vw;
+    width: 100%;
     height: 70vh;
-    
-   
+    /* background-image: url("../assets/tablet.jpg"); */
+    background: #89c2d9;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    
+
     
 }
 
 .cta{
-   width: 100%;
-   margin: 1rem;
+   width: fit-content;
+   padding-right: 2.5rem;
+   
 
 }
 .cta img{
-    width: 300px;
-    height: 300px;
-    
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
     background-size: cover;
 }
-
+.cta .discount{
+    width: 150px;
+    height: 150px;
+    top: 25%;
+    
+    right: 15%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    line-height: 1.2rem;
+    background: #d1342a;
+    clip-path: polygon(45% 13%, 78% 26%, 88% 58%, 77% 73%, 27% 76%, 18% 48%, 28% 26%);
+}
+.cta .discount small{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    
+    text-align: end;
+}
+.cta .discount p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    
+    text-align: end;
+}
 .homepage .container{
-    text-align: center;
-    color: #276221;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    line-height: 2.5rem;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+
+    
+    
 }
 
 .homepage .container h1{
-    color: #276221;
-    font-size: 3rem;
-    
-    font-family:"Raleway", sans-serif;
+   text-align: left;
+   color: #f8f9fa;
+   text-transform: capitalize;
 }
 .homepage .container span{
-    color: #276221;
-    font-size: 3rem;
-    
-    font-family:"Pacifico", sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .homepage .container p{
    
-    
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    text-align: left;
+  
 
 }
 
 .homepage .container .explore{
-    
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    background-color: #276221;
-    color: #cce7c9;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #012a4a;
     font-weight: 600;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 2rem;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-family:"Raleway", sans-serif;
+}
+.homepage .container .explore:hover{
+    
+   
+    color: green;
+    font-weight: 600;
+    border: 2px solid green;
+   
 }
 
 
@@ -232,27 +285,27 @@ border-radius: 8px;
  
 @media only screen and (max-width: 600px) { 
     .homepage{
-        background-image: url("../assets/pill.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
     padding-bottom: 1rem;
     color: #f8f9fa;
+    
     }
     .homepage .container h1{
-        color: #f8f9fa;
+        color: #012a4a;
         font-size: 2rem;
-        
+      
         
     }
     
     .homepage .container p{
        
-        color: #c5c5c5;
+        color: #012a4a;
         font-size: 1.3rem;
         font-weight: 600;
         margin-bottom: 2rem;
-    
+        align-items: left;
+  
+        line-height: 1rem;
     }
     .cta{
        display: none;

@@ -1,13 +1,12 @@
 import Navbar from "../components/navbar/Navbar";
 import "./pages.css";
-import item from "../assets/pill.png";
 
 import Footer from "../components/footer/Footer";
 import { Link } from "react-router-dom";
+import pill from "../assets/jaro.png";
 
 import ProductCard from "../components/productCard/ProductCard";
-
-
+import Sold from "../components/sold/Sold";
 
 export default function Homepage() {
   return (
@@ -15,83 +14,24 @@ export default function Homepage() {
       <Navbar />
       <div className="homepage">
         <div className="container">
-          <h1>Welcome to <span className="drug">DJunction</span></h1>
-          <p>
-            Discover the best drugs products from a curated selection of
-            trusted vendors. Browse our marketplace to find the perfect strain,
-            edible, or accessory to suit your needs.
-            Buy drugs from a variety of different vendors
-          </p>
-          
-          <Link to="/card" className="explore">Shop Now</Link>
+          <p> FAST HEALTHCARE</p>
+          <h1>Its easy to be healthy</h1>
+          <p> Reliable,Fast, Safe, and Secure</p>
+
+          <Link to="/card" className="explore">
+            Shop Now <span>→</span>
+          </Link>
         </div>
         <div className="cta">
-          <img src={item} alt="" />
+          <img src={pill} alt="" />
+          <div className="discount">
+            <p>20%</p>
+            <small>discount</small>
+          </div>
         </div>
       </div>
- <ProductCard />
-      {/* <section className="service">
-      <h3>Our service</h3>
-         <div className="service_container">
-          <div className="card_service">
-            <img src={secure} alt=""  />
-            <span>Security</span>
-            <p>Your trust is our greatest asset. We adhere to strict security protocols to safeguard your sensitive information.</p>
-            <button type="button">Learn more</button>
-          </div>
-         
-          <div className="card_service">
-            <img src={reliable} alt=""  />
-            <span>reliable</span>
-            <p>Your satisfaction is our guarantee. If you are not happy with your purchase, we will work with you to make it right.</p>
-            <button type="button">Learn more</button>
-          </div>
-          <div className="card_service">
-            <img src={discount} alt=""  />
-            <span>Affordable discount</span>
-            <p>Discounts for everyone! We offer a range of promotions and discounts to suit every budget and need.</p>
-            <button type="button">Learn more</button>
-          </div>
-         </div>
-      </section> */}
-
-      {/* <section className="offers">
-      <h3>What our client say?</h3>
-        <div className="offer_container">
-          
-          <div className="desc">
-          <p className="title">Your One-Stop Shop for Premium Cannabis Products</p>
-            <p className="p_desc">
-
-              At WeedJunction, we are dedicated to providing our customers with
-               
-             best selection of high-quality cannabis products. From rare
-              strains to artisanal edibles, our marketplace offers a wide range
-              of options to suit every need and preference. Our team of experts
-              carefully curates our products to ensure that every item meets our
-              high standards of quality, potency, and safety. Whether you are a
-              seasoned connoisseur or just starting your cannabis journey, we
-              invite you to explore our marketplace and discover the perfect
-              products for you.
-            </p>
-          </div>
-
-          <div className="desc">
-            <p className="title">Best of Cannabis with WeedJunction</p>
-            <p>
-              WeedJunction is your premier destination for all things cannabis.
-              Our platform connects you with trusted vendors who offer a diverse
-              range of products, from flowers and concentrates to vapes and
-              accessories. Our goal is to provide a seamless and enjoyable
-              shopping experience, with a focus on quality, convenience, and
-              customer satisfaction. Browse our marketplace today and discover
-              why WeedJunction is the go-to choice for cannabis enthusiasts.
-            </p>
-          </div>
-        </div>
-      </section> */}
-      
-      
+      <ProductCard />
+      <Sold />
       <Footer />
     </>
   );

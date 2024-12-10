@@ -1,3 +1,4 @@
+
 body.no-scroll {
   overflow: hidden; /* Prevent scrolling on the body */
 }
@@ -9,14 +10,16 @@ body.no-scroll {
   padding: 10px;
   width: 100%;
   background: #f8f9fa;
+  overflow: hidden;
 }
 .pro_container {
-  border: 1px solid #ccc;
+  
   border-radius: "8px";
   padding: 10px;
   text-align: center;
   width: 230px;
-  min-height: 300px;
+  min-height: 200px;
+  box-shadow:  0 0 0 1px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
 }
 
@@ -26,21 +29,22 @@ body.no-scroll {
   object-fit: "cover";
 }
 .pro_container h3 {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
+  color:rgba(0, 0, 0, 0.6);
   margin-bottom: 8px;
 }
 .pro_container .pro_price {
   font-size: 14px;
   font-weight: 500;
-  /* margin-bottom: 5px; */
-  /* color: #4CAF50; */
+ 
+  color: rgba(0, 0, 0, 0.8);
   text-align: left;
 }
 .pro_container .co_price {
   font-size: 16px;
   font-weight: 700;
-  color: #4caf50;
+  color: rgba(0, 0, 0, 0.8);;
   text-align: left;
 }
 .pro_container .unit_name {

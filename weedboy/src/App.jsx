@@ -13,6 +13,7 @@ import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import Card from './components/productCard/Card'
 import ProductCard from './components/productCard/ProductCard'
+import Sold from './components/sold/Sold'
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
           <Route path="/touch" element={<Touch/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/card" element={<Card/>} />
+          <Route path="/sold" element={<Sold/>} />
           
           <Route path="/contact" element={<Contact/>} />
           <Route path="/footer" element={<Footer/>} />

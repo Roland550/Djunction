@@ -326,28 +326,29 @@ Hello, I am interested in your product:${selectedProduct?.name} .
       
       <div className="product-card">
         {products.map((product) => (
-          <div key={product.id} className="pro_container">
-            <h3>{product.name}</h3>
+          <div key={product.id} className="pro_container"  onClick={() => handleLearnMore(product.id)}>
+            
             <img src={product.image} alt={product.name} className="pro_image" />
+            <h3>{product.name}</h3>
+            
             <p className="pro_price">
-              <span>Brand name</span> <small>{product.Bname}</small>
+              <span></span> <small className="co_price"> {product.price}</small>
             </p>
             <p className="pro_price">
-              <span>Price</span> <small className="co_price"> {product.price}</small>
+             <small className="co_price">⭐⭐⭐⭐⭐</small>
             </p>
+
            
            
 
-            <button
+            {/* <button
               onClick={() => handleLearnMore(product.id)}
               className="learn_more"
             >
               Learn More
-            </button>
+            </button> */}
 
-            <button onClick={handleOpenForm} className="pro_contact">
-              Contact Seller
-            </button>
+            
             {showDescription[product.id] && (
               <div
                 className="description-popup"
@@ -394,6 +395,16 @@ Hello, I am interested in your product:${selectedProduct?.name} .
                     </p>}
                     <p className="pro_des"> <strong>Prescription: </strong>{product.description}</p>
                   </div>
+
+                   <div onClick={() => handleHideDescription(product.id)}>
+                   <button onClick={handleOpenForm}
+                   
+                   className="pro_contact"
+                   
+                   >
+              Contact Seller
+            </button>
+                   </div>
                  
                 </div>
               </div>
