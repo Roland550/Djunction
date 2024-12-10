@@ -1,5 +1,5 @@
 .footer_cont{
-    background: #949597;
+    background: #333;
     margin-top: 1rem;
 }
 .footer{
@@ -48,7 +48,7 @@
     text-align: center;
     padding: 15px;
     font-weight: bold;
-    color: #012a4a;
+    color: #fff;
 }
 
 .footer_cont .pro_side form .puts{
@@ -75,4 +75,20 @@
     color: #fff;
     font-size: 15px;
     padding: 0.5rem;
+}
+
+.social_icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 1rem;
+}
+.social_icons a{
+    width: 100%;
+   
+   
+    text-decoration: none;
+    
+    color: #fff;
 }

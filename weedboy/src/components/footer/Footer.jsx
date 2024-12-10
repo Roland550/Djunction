@@ -1,26 +1,10 @@
 import { Link } from "react-router-dom";
 import "./footer.css";
-import emailjs from "@emailjs/browser"
-import { useRef } from 'react';
+import { FaFacebook, FaInstagram, FaTelegram, FaWhatsapp } from 'react-icons/fa';
 export default function Footer() {
-  const form = useRef();
+  
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm('service_8ja8imq', 'template_96v6h9h', form.current, {
-        publicKey: 'qupMiJMZy7qFP2m7C',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+  
   return (
     <footer>
       <div className="footer_cont">
@@ -31,24 +15,32 @@ export default function Footer() {
         
 
          
-          <div className="pro_side">
-            <form ref={form} onSubmit={sendEmail}>
-             
-
-              <div className="puts">
-              <input type="email" name="user_email" placeholder="Email" />
-              <textarea name="message" placeholder="Message" />
-              </div>
-              <div className="puts">
-              <input type="submit" value="Send" className="send"/>
-              </div>
-            </form>
-          </div>
+         
           <div className="list">
             <Link to="/card" className="link">Shop</Link>
 
             <Link to="/about" className="link">About Us</Link>
             <Link to="/contact" className="link">Contact Us</Link>
+          </div>
+
+          <div className="social_icons">
+            <a href="https://www.facebook.com/your-facebook-page" target="_blank" rel="noopener noreferrer">
+              <FaFacebook />
+              Djunction though
+            </a>
+            <a href="https://www.instagram.com/your-instagram-page" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+              Djunction_pull_66
+            </a>
+            <a href="https://t.me/your-telegram-page" target="_blank" rel="noopener noreferrer">
+              <FaTelegram />
+              @Djunction
+            </a>
+            <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
+              +237620784518
+            </a>
+            
           </div>
         </div>
         <p className="copy">Copyrigth©{new Date().getFullYear()} allright reserved</p>
