@@ -369,9 +369,7 @@ Hello, I am interested in your drugs: ${name}.
             <p className="pro_price">
               <span></span> <small className="co_price"> {product.price}</small>
             </p>
-            <p className="pro_price">
-             <small className="co_price">⭐⭐⭐⭐⭐</small>
-            </p>
+           
 
            
            
