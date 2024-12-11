@@ -1,6 +1,7 @@
 
 .container_touch{
     display: flex;
+    
     justify-content: center;
     align-items: center;
 }
@@ -14,33 +15,54 @@
 }
 
 .icon{
-    margin: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 .icon img{
-    width: fit-content;
-    height: 80vh;
+    width: 100%;
+    height: 50vh;
+   
 } 
 
+.former{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-form{
+
+.former form{
+    width: 350px;
     padding: 1rem;
     border: 1px solid #c5c5c5;
     border-radius: 10px;
 }
 
-form input{
+ form .cont_input{
     width: 300px;
     height: 40px;
     margin: 1rem;
+    background: transparent;
     padding-left: 0.5rem;
     border:  1px solid #c5c5c5;
     border-radius: 10px;
     color: #000;
+    outline: none;
 }
 form input:last-child{
-    background: #276221;
-    color: #c5c5c5;
+    background: #668faf;
+    color: #fff;
     font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    outline: none;
+    border:  1px solid #c5c5c5;
+    border-radius: 10px;
 }
 form textarea{
     width: 300px;
@@ -50,6 +72,7 @@ form textarea{
     border:  1px solid #c5c5c5;
     border-radius: 10px;
     color: #000;
+    outline: none;
 }
 
  

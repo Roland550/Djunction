@@ -10,16 +10,18 @@ export default function Sold() {
   return (
     <div className='promotion'>
       <div className="pro_left_side">
-        <h2>We are currently on promtion</h2>
-        <small>Where you get 20% on each drug that you buy</small>
+      <div className="promo">
+            <p>20%</p>
+            <small>discount</small>
+          </div>
+        <h2>Exclusive Offer!</h2>
+        <small>We are offering a special promotion 20% off  till next month.</small>
+        <small>Don't  wait, buy now and save big!</small>
        
       </div>
       <div className="pro_right_side">
         <img src={pill} alt="" />
-        <div className="promo">
-            <p>20%</p>
-            <small>discount</small>
-          </div>
+        
       </div>
       
     </div>

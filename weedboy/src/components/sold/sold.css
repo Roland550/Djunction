@@ -11,6 +11,10 @@
 
 .promotion .pro_left_side{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   text-align: center;
   padding: 20px;
     line-height: 1.2rem;
@@ -28,18 +32,16 @@
    
 }
 
-.pro_right_side .promo{
+.pro_left_side .promo{
     width: 150px;
     height: 150px;
-    bottom:  -235%;
     
-    right: 26%;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+   
     line-height: 1.2rem;
     background: #d1342a;
     clip-path: polygon(45% 13%, 78% 26%, 88% 58%, 77% 73%, 27% 76%, 18% 48%, 28% 26%);
@@ -78,6 +80,14 @@
     outline: none;
 }
 
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 830px) and (max-device-height: 830px) {
+  .promo {
+    display: flex;
+  }
+
+}
+
 @media only screen and (max-width: 1024px) {
     .promotion {
       height: 30vh;
@@ -102,7 +112,7 @@
   }
     .promotion .pro_right_side .promo {
      
-     display: none;
+     display: flex;
     }
   }
 @media only screen and (max-width: 768px) {
@@ -129,13 +139,19 @@
   }
     .promotion .pro_right_side .promo {
      
-     display: none;
+      width: 90px;
+        height: 90px;
+        
+        
+      
+       
+        line-height: 1rem;
     }
   }
   
   @media only screen and (max-width: 480px) {
     .promotion {
-      height: 20vh;
+      height: 30vh;
     }
     .promotion .pro_left_side {
       padding: 5px;
@@ -154,7 +170,16 @@
       height: 100%;
     }
     .promotion .pro_right_side .promo {
-        display: none;
+      
+        width: 90px;
+        height: 90px;
+        
+        
+      
+       
+        line-height: 1rem;
+       
+    
     }
   }
 

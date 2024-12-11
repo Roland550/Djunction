@@ -1,6 +1,6 @@
 
 import './touch.css'
-import touch from "../../assets/sit.jpg"
+import touch from "../../assets/cont.png"
 import  { useState } from 'react';
 import emailjs from '@emailjs/browser';
 export default function Touch() {
@@ -37,6 +37,7 @@ export default function Touch() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Name"
+            className='cont_input'
           />
           <input
             type="email"
@@ -44,6 +45,7 @@ export default function Touch() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
+            className='cont_input'
           />
           <textarea
             name="message"
