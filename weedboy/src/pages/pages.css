@@ -318,14 +318,16 @@
     height: 47vh;
   }
   .homepage .container h1 {
+    font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: 2rem;
   }
 
   .homepage .container p {
     color: #012a4a;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 2rem;
     align-items: left;
 
