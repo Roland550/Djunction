@@ -1,3 +1,6 @@
+html, body {
+  overflow-x: hidden;
+}
 
 * {
   box-sizing: border-box;
@@ -365,7 +368,7 @@
   .phone {
     position: absolute;
     top: 26%;
-    right: -10%;
+    right: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,7 +386,7 @@
     display: none;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 350px) {
   .homepage {
     padding-bottom: 1rem;
     color: #f8f9fa;
