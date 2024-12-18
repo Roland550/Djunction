@@ -24,6 +24,7 @@ body.no-scroll {
   min-height: 200px;
   box-shadow:  0 0 0 1px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .pro_container img {
@@ -282,7 +283,9 @@ body.no-scroll {
     gap: 10px;
     padding: 5px;
     width: 100%;
-
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
     background: #f8f9fa;
   }
   .pro_container img {
