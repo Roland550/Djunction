@@ -1,27 +1,35 @@
 import { useEffect, useState } from "react";
 
-
 import "./productCard.css";
-import "../productForm/productForm.css"
-import Av1 from "../../assets/Abemaciclib..jpg";
-import AV2 from "../../assets/Alpelisib..jpg";
-import AV3 from "../../assets/avt8.jpg";
-import AV4 from "../../assets/avt9.jpg";
-import AV5 from "../../assets/avt10.jpg";
-import AV6 from "../../assets/avt11.jpg";
-import AV7 from "../../assets/avt12.jpg";
-import AV8 from "../../assets/avt13.jpg";
-import AV9 from "../../assets/avt14.jpg";
-import AV10 from "../../assets/avt15.jpg";
-import AV11 from "../../assets/avt16.jpg";
-import AV12 from "../../assets/avt17.jpg";
-import AV13 from "../../assets/avt18.jpg";
-import AV14 from "../../assets/avt19.jpg";
-import AV15 from "../../assets/avt20.jpg";
-import AV16 from "../../assets/avt21.jpg";
-import AV17 from "../../assets/avt22.jpg";
-import AV18 from "../../assets/avt23.jpg";
+import "../productForm/productForm.css";
+import Av1 from "../../assets/druge/5-HTP (5-Hydroxytryptophan).jpeg";
+import AV2 from "../../assets/druge/Amylin Analogues (Pramlintide).jpeg";
+import AV3 from "../../assets/druge/Apple Cider Vinegar.jpeg";
+import AV4 from "../../assets/druge/Benzphetamine.jpeg";
+import AV5 from "../../assets/druge/Berberine.jpeg";
+import AV6 from "../../assets/druge/Bupropion.jpeg";
+import AV7 from "../../assets/druge/Cetilistat.jpeg";
+import AV8 from "../../assets/druge/Chromium Picolinate.jpeg";
+import AV9 from "../../assets/druge/Diethylpropion.jpeg";
 
+import AV11 from "../../assets/druge/Dulaglutide.jpeg";
+import AV12 from "../../assets/druge/Ephedra Alkaloids.jpeg";
+import AV13 from "../../assets/druge/Ephedrine.jpeg";
+import AV14 from "../../assets/druge/Fluoxetine.jpeg";
+import AV15 from "../../assets/druge/forskolin.jpeg";
+import AV16 from "../../assets/druge/Garcinia Cambogia.jpeg";
+import AV17 from "../../assets/druge/Green Tea Extract.jpeg";
+import AV18 from "../../assets/druge/Lorcaserin (Belviq).jpeg";
+import AV19 from "../../assets/druge/Mazindol.jpeg";
+import AV20 from "../../assets/druge/phentermine.jpeg";
+import AV21 from "../../assets/druge/Phenylpropanolamine (PPA).jpeg";
+import AV22 from "../../assets/druge/Pioglitazone.jpeg";
+import AV23 from "../../assets/druge/Rimonabant.jpeg";
+import AV24 from "../../assets/druge/Tesofensine.jpeg";
+import AV25 from "../../assets/druge/Tirzepatide.jpeg";
+import AV26 from "../../assets/druge/Tonalin, LeanLife.jpeg";
+import AV27 from "../../assets/druge/Topiramate.jpeg";
+import AV28 from "../../assets/druge/Zonisamide.jpeg";
 
 const ProductCard = () => {
   const [showForm, setShowForm] = useState(false);
@@ -46,250 +54,528 @@ const ProductCard = () => {
   const products = [
     {
       id: 1,
-      name: "Abemaciclib",
+      name: "HTP (5-Hydroxytryptophan)",
       Gname: "",
-      Bname: "Verzenio (Abemaciclib)",
+      Bname: "Natrol 5-HTP, NOW 5-HTP, Jarrow Formulas 5-HTP.",
       Dform: "",
-      price: "$1,500 to $1,600 per month",
+      price: "$10–$40 per month",
       Dclass: "",
+      usage:
+        "Often used as a dietary supplement to support mood regulation, sleep improvement, and appetite suppression. For weight loss, it is typically combined with diet and exercise to reduce food cravings and overeating.",
       image: Av1,
-      Dosage: " 150 mg orally twice daily (varies based on specific conditions).",
-      SideEffects: " Diarrhea, fatigue, nausea, decreased appetite, abdominal pain, low white blood cell counts.",
-      description: `Abemaciclib is a prescription-only medication, meaning it must be prescribed by an oncologist or healthcare provider who specializes in cancer treatment. It is usually taken orally in the form of tablets, with the typical dosage being 150 mg twice daily for most patients, although this can vary based on the individual’s health condition and response to treatment`,
+      Dosage: [
+        " 50–100 mg taken 1–3 times daily,",
+        "50–100 mg taken 1–3 times daily.",
+        "It is recommended to start with a lower dose and gradually increase if well tolerated.",
+      ],
+      prescription:
+        "Not required; 5-HTP is available over-the-counter as a dietary supplement.",
+      SideEffects: "nausea, diarrhea, and headaches.",
+      description: `5-HTP is a naturally occurring compound produced in the body from the amino acid tryptophan. It is a precursor to serotonin, a neurotransmitter that influences mood, appetite, and sleep. By increasing serotonin levels, 5-HTP may help reduce appetite and cravings, which could support weight loss.`,
+      precaution:
+        "o	Should not be used with medications that increase serotonin (e.g., antidepressants like SSRIs or MAOIs) due to the risk of serotonin syndrome.Consult a healthcare provider before use, especially if you have a medical condition or are taking other medications.",
+      Maction: "",
     },
     {
       id: 19,
-      name: "Alpelisib",
+      name: "Amylin Analogues (Pramlintide)",
       Gname: "",
-      Bname: "Piqray",
+      Bname: "Symlin",
       Dform: "",
-      price: "$14,000 per month",
+      price: "$300–$500 per month",
       Dclass: "",
       image: AV2,
-      Dosage: "300 mg orally once daily with food.",
-      SideEffects: "High blood sugar, rash, diarrhea, nausea, and fatigue",
-      description: "Alpelisib (Piqray) is a prescription-only medication that must be prescribed by an oncologist or healthcare provider experienced in cancer treatment. It is taken as an oral tablet, typically once daily with food. The standard starting dose is usually 300 mg per day, but the dose may be adjusted based on the patient’s health status and tolerability.",
+      usage:
+        "Pramlintide is primarily approved for use in managing blood sugar levels in individuals with type 1 or type 2 diabetes. It is sometimes used off-label for weight loss due to its appetite-suppressing effects. It should be combined with a calorie-controlled diet and exercise program for optimal weight-loss results.",
+      Dosage:
+        "Starting Dose:15 mcg subcutaneous injection before major meals.Titration:Increase in 15 mcg increments every 3 days as tolerated. Maximum dose: 120 mcg before meals. •	Administered via injection, usually in the abdomen or thigh, immediately before meals.",
+      SideEffects:
+        "Common: Nausea, vomiting, headache, reduced appetite. Serious: Hypoglycemia (especially when combined with insulin), injection site reactions.",
+      description:
+        "Pramlintide is a synthetic form of amylin, a hormone co-secreted with insulin by the pancreas. Amylin helps regulate blood sugar levels by slowing gastric emptying, suppressing glucagon release, and promoting satiety. This makes it effective for weight management, especially in individuals with diabetes who struggle with overeating.",
+      prescription:
+        "Required; Pramlintide is an injectable medication that must be prescribed and monitored by a healthcare provider.",
+      precaution:
+        "Not recommended for individuals with gastroparesis (delayed stomach emptying) or those with a history of severe hypoglycemia.Should be used cautiously alongside insulin to prevent low blood sugar episodes.",
+      Maction:
+        "Slows the rate at which food leaves the stomach (gastric emptying), helping to prolong feelings of fullness.Reduces glucagon secretion, which helps stabilize blood sugar levels.Promotes satiety by acting on brain centers that regulate appetite.",
     },
     {
       id: 2,
-      name: "Abraxane",
+      name: "Apple Cider Vinegar (ACV)",
       Gname: "",
-      Bname: "Paclitaxel Albumin-stabilized Nanoparticle Formulation",
+      Bname:
+        "Bragg Organic Raw Unfiltered Apple Cider Vinegar, Goli Apple Cider Vinegar Gummies, Vitafusion Apple Cider Vinegar.",
       Dform: "",
-      price: "$2,500",
+      price: "$5–$20 per bottle",
       Dclass: "",
       image: AV3,
+      usage:
+        "Apple Cider Vinegar is used as a natural remedy to aid digestion, curb appetite, and maintain stable blood sugar levels. For weight loss, it is typically taken before meals to promote a feeling of fullness and reduce calorie intake.",
       Dosage: "100 mg/m² IV on days 1, 8, and 15 of a 28-day cycle.",
-      SideEffects: "Nausea, anemia, fatigue, hair loss, low blood counts, neuropathy.",
-      description: "Abraxane is a prescription-only medication, and it must be administered by a healthcare provider in a clinical setting, usually through an intravenous (IV) infusion. The dosing schedule can vary based on the type of cancer being treated and the patient's overall health. For example, for metastatic breast cancer, it is typically administered as an infusion every 3 weeks.",
+      SideEffects:
+        "Can cause nausea, erosion of tooth enamel, throat irritation, or upset stomach if taken undiluted or in high amounts.",
+      description:
+        "Apple Cider Vinegar is a fermented liquid made from crushed apples, yeast, and bacteria. It contains acetic acid, which may help suppress appetite, improve digestion, and stabilize blood sugar levels. These effects can indirectly support weight loss by reducing calorie intake and promoting better metabolism.",
+      prescription:
+        "Not required; Apple Cider Vinegar is available over-the-counter in liquid, gummy, or capsule form",
+      precaution:
+        "Always dilute liquid ACV to avoid damage to teeth and the gastrointestinal tract.•	Not recommended for individuals with digestive disorders, low potassium levels, or acid reflux unless cleared by a healthcare provider.",
+      Maction: "",
     },
     {
       id: 3,
-      name: "Ado-Trastuzumab Emtansine",
+      name: "Benzphetamine",
       Gname: "",
-      Bname: "Kadcyla (Ado-Trastuzumab Emtansine)",
+      Bname: "Didrex",
       Dform: "",
-      price: "$9,000 per dose",
+      price: "$30–$100 per month",
       Dclass: "",
       image: AV4,
-      Dosage: " 3.6 mg/kg IV every three weeks.",
-      SideEffects: "Nausea, fatigue, liver enzyme elevation, low platelet counts, peripheral neuropathy.",
-      description: "Ado-Trastuzumab Emtansine is a prescription-only medication and must be administered in a clinical setting under the supervision of a healthcare provider. It is given through an intravenous (IV) infusion. The dose and frequency of infusions depend on the patient's health, weight, and how well the cancer responds to the treatment.",
+      usage:
+        "Benzphetamine is used as a short-term adjunct (a few weeks) to a reduced-calorie diet, exercise, and behavior modification for the treatment of obesity.",
+      Dosage:
+        "Typical starting dose: 25–50 mg daily. Adjusted based on response: The maximum dose is 50 mg taken 1–3 times daily, 1 hour before meals or mid-morning. Duration: Typically prescribed for 12 weeks or less.",
+      SideEffects:
+        "Common: Dry mouth, insomnia, nervousness, dizziness, and increased heart rate. Serious: Chest pain, shortness of breath, severe mood changes, or high blood pressure. Risk of dependency or abuse if used improperly due to its similarity to amphetamines.",
+      description:
+        "Benzphetamine is a sympathomimetic amine and appetite suppressant that stimulates the central nervous system, reducing hunger. It is classified as an anorectic and is chemically related to amphetamines. It is prescribed for short-term weight loss in individuals who are significantly overweight or obese.",
+      prescription:
+        "Required; Benzphetamine is a Schedule III controlled substance in the U.S., and its use must be monitored by a healthcare provider.",
+      precaution:
+        "Not recommended for individuals with: Cardiovascular disease, uncontrolled hypertension, hyperthyroidism, glaucoma, or a history of substance abuse. Pregnancy or breastfeeding, as it can harm the baby.",
+      Maction: "",
     },
     {
       id: 4,
-      name: "Afinitor(Everolimus) Afinitor Disperz (Everolimus)  ",
+      name: "Berberine",
       Gname: "",
-      Bname: "Afinitor",
+      Bname: "",
       Dform: "",
-      price: "$20,000 per month",
+      price: "$20–$50 per month,",
       Dclass: "",
       image: AV5,
-      Dosage: ": 10 mg orally once daily.",
-      SideEffects: ": Mouth sores, infections, fatigue, nausea, low blood counts.",
-      description: "Both Afinitor and Afinitor Disperz are prescription-only medications. They are usually prescribed by oncologists or other healthcare providers for patients with cancers or other conditions where mTOR inhibition is beneficial. The medication is taken orally, typically once a day, and the dose depends on the condition being treated and the individual patient’s health status.",
+      usage:
+        "Berberine is primarily used as a supplement to manage blood sugar levels, cholesterol, and metabolic conditions. For weight loss, it is often combined with a healthy diet and exercise to improve metabolism and reduce fat storage.",
+      Dosage:
+        "Typical Dose: 500 mg taken 2–3 times per day (total daily dose: 1,000–1,500 mg). To reduce the risk of gastrointestinal discomfort, it is best taken with meals. Recommended to divide the dose into smaller amounts throughout the day.",
+      SideEffects:
+        "Common: Digestive issues like diarrhea, constipation, or stomach cramps, especially at higher doses. Rare: May lower blood sugar too much when combined with diabetes medications.Should not be used by pregnant or breastfeeding women or individuals with low blood pressure unless under medical supervision.",
+      description:
+        "Berberine is a naturally occurring compound found in plants like Berberis species. It is known for its potential benefits in regulating blood sugar levels, improving insulin sensitivity, and promoting weight loss by supporting metabolic health. Berberine activates an enzyme called AMPK (adenosine monophosphate-activated protein kinase), often referred to as the metabolic master switch, which can improve energy metabolism and fat burning.",
+      prescription:
+        "Not required; Berberine is available over-the-counter as a dietary supplement.",
+      precaution:
+        "Avoid combining with medications that lower blood sugar (e.g., metformin) without consulting a healthcare provider, as it could lead to hypoglycemia.Long-term use should be monitored, as it may interfere with nutrient absorption",
     },
     {
       id: 5,
-      name: "Contrave",
+      name: "Cetilistat",
       Gname: "",
-      Bname: "Contrave",
+      Bname: "Cetislim, Checkwt.",
       Dform: "",
-      price: "$99",
+      price: "$50–$100 per month ",
       Dclass: "",
-      image: AV6,
-      Dosage: " 1 tablet daily, increasing weekly to 2 tablets twice daily.",
-      SideEffects: "Nausea, headache, constipation, dizziness, dry mouth.",
-      usage: "Naltrexone and bupropion combination is used together with a reduced-calorie diet and proper exercise to help lose weight. This medicine is used in people who are overweight or obese",
+      image: AV7,
+
+      Dosage: "60–120 mg taken orally with meals containing fat.",
+      SideEffects:
+        "Oily stools, flatulence, diarrhea, and abdominal discomfort.",
+      usage:
+        "Prescribed for managing obesity, often combined with a calorie-restricted diet.",
       description:
-        "Take this medicine by mouth with a glass of water. Follow the directions on the prescription label. Do not cut, crush or chew this medicine. Swallow the tablets whole. You can take it with or without food. Do not take with high-fat meals as this may increase your risk of seizures. Take your medicine at regular intervals. Do not take it more often than directed. Do not stop taking except on your doctor's advice.",
+        ": A lipase inhibitor that prevents fat absorption in the intestines, similar to Orlistat. It is used to treat obesity and associated metabolic disorders like type 2 diabetes.",
+      prescription: "Required in most countries.",
+      precaution:
+        "Not recommended for individuals with chronic malabsorption syndrome or gallbladder issues.",
     },
     {
       id: 6,
-      name: "metformine",
+      name: "Chromium Picolinate",
       Gname: "",
-      Bname: "polycystic ovary syndrome (PCOS).",
+      Bname: "Solgar Chromium Picolinate, NOW Chromium Picolinate.",
       Dform: "",
-      price: "$4",
-      Dclass: "used to treat type 2 diabetes. It is one of the most commonly prescribed drugs for managing blood sugar levels in people with this condition.",
-      image: AV7,
-      Dosage: "500 mg–2,000 mg daily in divided doses with meals.",
-      SideEffects: "Nausea, diarrhea, abdominal pain, rare lactic acidosis.",
-      description: "Immediate-release metformin is usually taken 2-3 times daily with meals.",
-    },
-    {
-      id: 7,
-      name: "Abraxane",
-      Gname: "",
-      Bname: "paclitaxel albumin-bound particles",
-      Dform: "",
-      price: "$2,500",
+      price: "$10–$30 per month.",
       Dclass: "",
       image: AV8,
-      Dosage: "100 mg/m² IV on days 1, 8, and 15 of a 28-day cycle.",
-      SideEffects: "Nausea, anemia, fatigue, hair loss, low blood counts, neuropathy.",
-      description: "Abraxane is a prescription-only medication and must be administered by a healthcare provider in a clinical setting, typically via an intravenous (IV) infusion. The dosage and frequency of administration depend on the type of cancer being treated and the patient's overall health status.",
+      usage:
+        "Used to reduce appetite and cravings, especially for those with high blood sugar or insulin resistance.",
+      Dosage: "200–1,000 mcg per day, taken with meals.",
+      SideEffects:
+        "Rare, but may include nausea, dizziness, or skin irritation.",
+      description:
+        ": A dietary supplement that improves insulin sensitivity and may reduce hunger or cravings. Often marketed for weight loss and blood sugar control.",
+      prescription: "Not required; available over the counter.",
+      precaution: ": Consult a doctor if you have diabetes or kidney issues.",
     },
     {
       id: 8,
-      name: "Insulin",
-      Gname: "$10",
-      Bname: "",
-      Dform: "",
-      Dclass: "",
-      price: "233",
-      image: AV9,
-      Dosage: ": Individualized based on blood sugar levels.",
-      SideEffects: " Low blood sugar (hypoglycemia), weight gain, injection site reactions.",
-      description:
-        "Insulin is an essential hormone. It helps your body turn food into energy and manages your blood sugar levels. If you have diabetes, your body can’t make enough insulin or can’t use it properly. Your healthcare provider can prescribe manufactured insulin that you take through an injection (shot), injectable pen or pump. Inhalable insulin is also an option.",
-    },
-    {
-      id: 9,
-      name: "Liraglutide (Saxenda)",
-      Gname: "liraglutide",
-      Bname: "Saxenda, Victoza",
-      Dform: "injection, solution",
-      Dclass: "Incretin Mimetics (GLP-1 Agonists)",
-      price: "$95.33",
-      image: AV10,
-      Dosage: "0.6 mg daily, increasing up to 1.2–3 mg daily.",
-      SideEffects: "Nausea, vomiting, diarrhea, pancreatitis risk.",
-      description:
-        "27 kg/m2 or greater (overweight) in the presence of at least one weight-related comorbid condition (e.g. hypertension, type 2 diabetes mellitus, or dyslipidemia) (1).",
-    },
-    {
-      id: 10,
-      name: "Mounjaro",
-      Gname: " tirzepatide",
-      Bname: "Mounjaro",
-      price: "$1000",
-      Dform:
-        "injection, for subcutaneous use (2.5 mg, 5 mg, 7.5 mg, 10 mg, 12.5 mg,15 mg per 0.5 mL in single-dose pen or vial)",
-      Dclass: "Incretin Mimetics (GLP-1 Agonists)",
-      image: AV11,
-      Dosage: " 2.5 mg weekly, titrated up to 15 mg.",
-      SideEffects: "Nausea, vomiting, diarrhea, low blood sugar.",
-      usage: ": Mounjaro is an injectable prescription medicine that is used along with diet and exercise to improve blood sugar (glucose) in adults with type 2 diabetes mellitus.",
-      description: "You should follow the directions on your prescription label carefully and ask your pharmacist or doctor to explain any part you do not understand. It is important to use this medicine exactly as directed. Do not take more or less of it or more often than your doctor prescribes.",
-    },
-    {
-      id: 11,
-      name: "Orlistat (Xenical, Alli)       ",
+      name: "Bupropion/Naltrexone",
       Gname: "",
-      Bname: "",
+      Bname: "Contrave",
       Dform: "",
-      price: "$77.87",
+      price: "$100–$300 per month.",
       Dclass: "",
-      image: AV12,
-      Dosage: "120 mg (Xenical) or 60 mg (Alli) three times daily with meals containing fat.",
-      SideEffects: "Oily stools, abdominal pain, flatulence.",
+      image: AV6,
+      usage:
+        "For chronic weight management in adults with a BMI ≥30 or ≥27 with associated comorbidities",
+      Dosage:
+        "Start with one tablet (8 mg/90 mg) daily, gradually increasing to two tablets twice daily.",
+      SideEffects:
+        "Rare, but may include nausea, dizziness, or skin irritation.",
       description:
-        "Alli has an average rating of 6.2 out of 10 from a total of 119 ratings on Drugs.com. 49% of reviewers reported a positive effect, while 31% reported a negative effect.",
+        "Combines an antidepressant (bupropion) and an opioid antagonist (naltrexone) to target appetite and cravings.",
+      prescription: "Required; dosing schedule must be followed.",
+      precaution: "",
     },
     {
-      id: 12,
-      name: "Ozempic",
-      Gname: "semaglutide injection",
-      Bname: "oh-ZEM-pick",
-      price: "$936",
-      Dform:
-        "subcutaneous injection (0.25mg dose pen; 0.5mg dose pen; 1.0mg dose pen; 2.0 mg dose pen)",
-      Dclass: " Incretin Mimetics (GLP-1 Agonists)",
-      image: AV13,
-      Dosage: " 0.25 mg weekly, increasing up to 1 mg.",
-      SideEffects: "Nausea, diarrhea, risk of pancreatitis.",
-      usage: "Once-weekly injection",
+      id: 7,
+      name: "Diethylpropion",
+      Gname: "",
+      Bname: "Tenuate, Tenuate Dospan.",
+      Dform: "",
+      price: "$30–$100 per month.",
+      Dclass: "",
+      image: AV9,
+      usage: "Aids in weight loss alongside a reduced-calorie diet.",
+      Dosage:
+        "25 mg 3 times daily before meals or 75 mg extended-release once daily in the morning.",
+      SideEffects:
+        "Nausea, anemia, fatigue, hair loss, low blood counts, neuropathy.",
       description:
-        "Ozempic (semaglutide) is a prescription medication that is FDA-approved to treat type 2 diabetes in combination with diet and exercise. It’s also approved to lower the risk Ozempic (semaglutide) is a prescription medication that is FDA-approved to treat type 2 diabetes in combination with diet and exercise. It’s also approved to lower the risk  ",
+        ": A sympathomimetic amine that reduces appetite by acting on the central nervous system. Prescribed for short-term use in obesity management",
+      prescription:
+        "Required; classified as a controlled substance in some regions.",
+      precaution:
+        "Not suitable for those with hypertension, heart disease, or substance abuse history.",
     },
+
     {
       id: 13,
-      name: "Phentermine-topiramate (Qsymia)",
-      Gname: "",
-      Bname: "phentermine / topiramate ER",
+      name: "Dulaglutide",
+      Gname: " ",
+      Bname: "Trulicity",
+      price: "$700–$1,000 per month.",
       Dform: "",
-      price: "$7.65 per unit",
       Dclass: "",
-      image: AV14,
-      Dosage: "3.75 mg/23 mg daily, titrated to 15 mg/92 mg if needed.",
-      SideEffects: " Dry mouth, insomnia, constipation, mood changes.",
-      description: "Qsymia is a prescription medicine that contains phentermine and topiramate extended-release. Qsymia may help adults and children 12 years and older with obesity, or some adults with overweight who also have weight-related medical problems, to help them lose excess body weight and keep the weight off.",
+      image: AV11,
+      usage:
+        "Prescribed for type 2 diabetes; may aid weight loss as a secondary benefit.",
+      prescription: "Required.",
+      precaution:
+        "Avoid if you have a history of thyroid cancer or pancreatitis.",
+      Dosage: "0.75–4.5 mg injected subcutaneously once weekly.",
+      SideEffects:
+        "Nausea, vomiting, diarrhea, fatigue, and injection site reactions.",
+
+      description:
+        "A GLP-1 receptor agonist that slows gastric emptying, reduces appetite, and helps control blood sugar. Approved for diabetes but used off-label for weight loss.",
     },
     {
       id: 14,
-      name: "Semaglutide (Wegovy)",
+      name: "Ephedra Alkaloids",
       Gname: "",
-      Bname: "Semaglutide",
+      Bname: "",
       Dform: "",
-      price: "$1,300 and $1,500 per month",
+      price: "Not widely available due to bans.",
       Dclass: "",
-      image: AV15,
-      Dosage: "0.25 mg weekly, increasing up to 2.4 mg (Wegovy).",
-      SideEffects: "Nausea, vomiting, risk of thyroid tumors.",
-      description: "Semaglutide is a prescription-only medication. It is important to consult a healthcare provider to see if it is appropriate for you, as it can have side effects and interactions with other medications. If a doctor prescribes Wegovy or Ozempic, they will typically assess factors like weight, diabetes status, and other health conditions.",
+      usage:
+        "Formerly used in weight-loss supplements, now banned in many countries due to safety concerns.",
+      prescription: "Not applicable; banned in most regions.",
+      precaution: "Not recommended due to significant safety risks.",
+      image: AV12,
+      Dosage: "Typically 20–50 mg daily (when legal).",
+      SideEffects: "High blood pressure, heart palpitations, stroke, or death.",
+      description:
+        "Natural compounds found in the Ephedra plant. These alkaloids stimulate the nervous system, increasing energy expenditure and suppressing appetite.",
     },
     {
       id: 15,
-      name: "Setmelanotide (Imcivree)",
-      Gname: "",
-      Bname: "Imcivree (Setmelanotide)",
+      name: "Ephedrine",
+      Gname: "semaglutide injection",
+      Bname: "",
+      price: "$20–$60 per month.",
       Dform: "",
-      price: "$300,000 to $400,000 per year",
+      Dclass: " Incretin Mimetics (GLP-1 Agonists)",
+      usage:
+        "Occasionally used in weight-loss combinations, often with caffeine, where legal.",
+      prescription:
+        "Required in some countries; banned for weight-loss purposes in others.",
+      precaution:
+        "High potential for abuse and adverse cardiovascular effects.",
+      image: AV13,
+      Dosage: "20–30 mg up to 3 times daily (where permitted).",
+      SideEffects: "Insomnia, anxiety, increased heart rate, and hypertension.",
+
+      description:
+        "A sympathomimetic amine that stimulates the central nervous system, promoting thermogenesis and appetite suppression.",
+    },
+    {
+      id: 15,
+      name: "Fluoxetine",
+      Gname: "",
+      Bname: "Prozac, Sarafem.",
+      Dform: "",
+      price: "$10–$30 per month (generic).",
       Dclass: "",
-      image: AV16,
-      Dosage: "1 mg–3 mg subcutaneously once daily",
-      SideEffects: "Skin darkening, nausea, injection site reactions.",
-      description: " Setmelanotide is a prescription-only medication. It is prescribed by a healthcare provider familiar with the specific genetic condition causing obesity. The medication is generally administered as a daily subcutaneous injection. The dose may vary based on the patient's condition and response to the medication.",
+      usage:
+        "Prescribed primarily for mental health conditions; weight loss is a secondary effect.",
+      prescription: "Required.",
+      precaution: "",
+      image: AV14,
+      Dosage: "10–60 mg daily, depending on the condition being treated.",
+      SideEffects:
+        " Nausea, headache, insomnia, sexual dysfunction, and anxiety.",
+      description:
+        "Not recommended for those with bipolar disorder unless combined with a mood stabilizer.",
     },
     {
       id: 16,
-      name: "Amylinomimetic injectables",
-      Gname: "Pramlintide",
-      Bname: "Symlin",
+      name: "Forskolin",
+      Gname: "",
+      Bname: "Fors Lean, Pure Forskolin Extract.",
       Dform: "",
-      price: "$75",
+      price: "$20–$50 per month.",
       Dclass: "",
-      image: AV17,
-      Dosage: "15–120 mcg subcutaneously before meals.",
-      SideEffects: "Nausea, vomiting, hypoglycemia.",
-      usage: "A medication used to control blood sugar in type 1 and type 2 diabetes, typically in combination with mealtime insulin.",
+      usage: "Marketed as a natural weight-loss supplement.",
+      prescription: "Not required; available over the counter.",
+      precaution:
+        "Avoid use if pregnant, breastfeeding, or taking blood-thinning or blood pressure medications.",
+      image: AV15,
+      Dosage: "250 mg of 10% forskolin extract taken twice daily.",
+      SideEffects:
+        "Low blood pressure, headache, dizziness, or rapid heart rate.",
       description:
-        "Doctors prescribe different medications to treat type 1 and type 2 diabetes and help control your blood sugar. Treatment may vary depending on your diagnosis, health, and other factors.",
+        "A compound extracted from the roots of the Indian Coleus plant, thought to aid weight loss by stimulating the production of cyclic AMP (cAMP), which may enhance fat breakdown.",
     },
     {
       id: 17,
-      name: "Anastrozole",
+      name: "Garcinia Cambogia",
+      Gname: "",
+      Bname: "Garcinia Cambogia Extra, Pure Garcinia Cambogia.",
+      Dform: "",
+      price: "$20–$50 per month.",
+      Dclass: "",
+      usage: "Marketed as a natural weight-loss supplement.",
+      prescription: "Not required; available over the counter.",
+      precaution:
+        "Avoid if pregnant, breastfeeding, or taking diabetes medications or statins.",
+      image: AV16,
+      Dosage: "500–1,000 mg 3 times daily, 30–60 minutes before meals.",
+      SideEffects: "Digestive upset, headache, dizziness.",
+      description:
+        "A tropical fruit extract containing hydroxycitric acid (HCA), which is thought to suppress appetite and block fat production.",
+    },
+    {
+      id: 18,
+      name: "Green Tea Extract",
+      Gname: "",
+      Bname: "EGCG Green Tea Extract, Pure Encapsulations Green Tea.",
+      Dform: "",
+      price: "$15–$40 per month.",
+      Dclass: "",
+      usage: "Used to enhance fat burning and support weight management.",
+      prescription: "Not required.",
+      precaution: "Avoid excessive caffeine intake.",
+      image: AV17,
+      Dosage: "250–500 mg daily, often standardized to 50% EGCG.",
+      SideEffects: "Insomnia, nausea, increased heart rate.",
+
+      description:
+        "Rich in catechins and caffeine, it boosts metabolism and promotes fat oxidation.",
+    },
+    {
+      id: 19,
+      name: "Lorcaserin (Belviq)",
       Gname: "",
       Bname: "Arimidex",
       Dform: "",
-      price: "$10",
+      price: "$200–$300 per month",
       Dclass: "",
-     
+      usage:
+        " Prescribed for chronic weight management alongside diet and exercise.",
+      prescription: "Required.",
+      precaution:
+        "Withdrawn from U.S. market in 2020 due to cancer risk concerns.",
       image: AV18,
-      Dosage: ": 1 mg orally once daily.",
-      SideEffects: "Hot flashes, joint pain, fatigue, bone thinning.",
-      description: "Anastrozole is a prescription-only medication and should be prescribed by a healthcare provider, typically an oncologist. It is usually taken as an oral tablet once a day, with or without food.",
+      Dosage: "10 mg twice daily.",
+      SideEffects: "Headache, dizziness, fatigue, nausea.",
+      description: "A serotonin 2C receptor agonist that suppresses appetite.",
+    },
+    {
+      id: 20,
+      name: "Mazindol",
+      Gname: "",
+      Bname: "Mazanor, Sanorex.",
+      Dform: "",
+      price: "$50–$100 per month.",
+      Dclass: "",
+      usage: "Adjunct to diet and exercise for weight loss.",
+      prescription: "Required.",
+      precaution: "Not for those with heart disease or hypertension.",
+      image: AV19,
+      Dosage: "1–3 mg daily.",
+      SideEffects: "Insomnia, dry mouth, restlessness.",
+      description:
+        ": A central nervous system stimulant that reduces appetite and is used short-term for obesity.",
+    },
+    {
+      id: 21,
+      name: "Phentermine",
+      Gname: "",
+      Bname: "Adipex-P, Lomaira.",
+      Dform: "",
+      price: "$20–$60 per month.",
+      Dclass: "",
+      usage: "Combined with diet and exercise for obesity treatment.",
+      prescription: "Required; controlled substance.",
+      precaution: "Avoid in individuals with cardiovascular disease.",
+      image: AV20,
+      Dosage: "15–37.5 mg daily, taken before breakfast or a few hours after.",
+      SideEffects: "Dry mouth, insomnia, increased heart rate.",
+      description:
+        "A sympathomimetic amine and appetite suppressant used for short-term weight loss.",
+    },
+    {
+      id: 22,
+      name: "Phenylpropanolamine (PPA)",
+      Gname: "",
+      Bname: "Arimidex",
+      Dform: "",
+      price: "Not applicable due to ban.",
+      Dclass: "",
+      usage: "Previously marketed for short-term weight loss.",
+      prescription: "Not available.",
+      precaution: "No longer recommended or available.",
+      image: AV21,
+      Dosage: "25–75 mg per day (historically).",
+      SideEffects: "High blood pressure, anxiety, stroke.",
+      description:
+        "A decongestant that was used as an appetite suppressant but is now banned due to stroke risk.",
+    },
+    {
+      id: 23,
+      name: "Pioglitazone",
+      Gname: "",
+      Bname: "Actos",
+      Dform: "",
+      price: "$10–$30 per month.",
+      Dclass: "",
+      usage:
+        "Treats type 2 diabetes; may cause mild weight gain due to fat redistribution.",
+      prescription: "Required",
+      precaution: "Avoid in heart failure patients.",
+      image: AV22,
+      Dosage: "15–45 mg daily.",
+      SideEffects: "Weight gain, edema, heart failure risk.",
+      description:
+        "A diabetes drug that improves insulin sensitivity; not primarily for weight loss but may assist in metabolic improvements.",
+    },
+    {
+      id: 24,
+      name: "Rimonabant",
+      Gname: "",
+      Bname: "Acomplia",
+      Dform: "",
+      price: "Not applicable due to market withdrawal.",
+      Dclass: "",
+      usage:
+        "Weight management for obesity (withdrawn due to psychiatric risks).",
+      prescription: "Required when available.",
+      precaution: "Withdrawn from global markets.",
+      image: AV23,
+      Dosage: "20 mg  daily.",
+      SideEffects: "Depression, anxiety, suicidal ideation.",
+      description:
+        "A cannabinoid receptor antagonist that suppresses appetite and improves metabolic parameters.",
+    },
+    {
+      id: 25,
+      name: "Tesofensine",
+      Gname: "",
+      Bname: "Tesofensine",
+      Dform: "",
+      price: "Not commercially available.",
+      Dclass: "",
+      usage: "Investigational drug for obesity treatment.",
+      prescription: "Not yet approved.",
+      precaution: "Limited human safety data.",
+      image: AV24,
+      Dosage: "0.25–0.5 mg daily (in clinical trials).",
+      SideEffects: "Dry mouth, insomnia, increased heart rate.",
+      description:
+        "A triple monoamine reuptake inhibitor that suppresses appetite and enhances energy expenditure.",
+    },
+    {
+      id: 26,
+      name: "Tonalin CLA",
+      Gname: "",
+      Bname: "Tonalin CLA",
+      Dform: "",
+      price: "$15–$50 per month.",
+      Dclass: "",
+      usage: "Marketed for fat reduction and body composition improvement.",
+      prescription: "Not required.",
+      precaution: "Limited evidence for significant weight loss.",
+      image: AV26,
+      Dosage: "3–6 g daily.",
+      SideEffects: "Upset stomach, diarrhea.",
+      description:
+        "Conjugated linoleic acid (CLA) supplement thought to reduce fat accumulation and promote weight loss.",
+    },
+    {
+      id: 27,
+      name: "Tirzepatide",
+      Gname: "",
+      Bname: "Mounjaro",
+      Dform: "",
+      price: "$800–$1,200 per month.",
+      Dclass: "",
+      usage:
+        "Approved for diabetes; shows significant weight-loss benefits in clinical trials.",
+      image: AV25,
+      prescription: "Required.",
+      precaution: "Avoid in thyroid cancer or pancreatitis history.",
+      Dosage: "2.5–15 mg injected weekly.",
+      SideEffects: "Nausea, vomiting, diarrhea, fatigue.",
+      description:
+        "A dual GLP-1/GIP receptor agonist that enhances satiety and regulates blood sugar.",
+    },
+    {
+      id: 28,
+      name: "Topiramate",
+      Gname: "",
+      Bname: "Topamax",
+      Dform: "",
+      price: "$50–$200 per month.",
+      Dclass: "",
+      usage: "Prescribed off-label for weight loss or in combination therapy.",
+      image: AV27,
+      Dosage: "25–200 mg daily.",
+      prescription: "Required.",
+      precaution: "Avoid during pregnancy due to birth defect risks.",
+      SideEffects: "Dizziness, cognitive issues, tingling, fatigue.",
+      description:
+        "An anticonvulsant that suppresses appetite and is often combined with Phentermine for weight loss (e.g., Qsymia).",
+    },
+    {
+      id: 29,
+      name: "Zonisamide",
+      Gname: "",
+      Bname: "Zonegran",
+      Dform: "",
+      price: "$30–$100 per month.",
+      Dclass: "",
+      usage: ": Off-label use for weight management.",
+      image: AV28,
+      Dosage: "100–600 mg daily.",
+
+      prescription: "Required",
+      precaution:
+        "Not recommended for individuals with kidney stones or sulfa allergies.",
+      SideEffects: "Fatigue, dizziness, nausea.",
+      description:
+        "An anticonvulsant sometimes used off-label for weight loss due to its appetite-suppressing properties.",
     },
   ];
 
@@ -336,7 +622,6 @@ Hello, I am interested in your drugs: ${name}.
     setShowDescription((prevShowDescription) => ({
       ...prevShowDescription,
       [id]: true,
-      
     }));
     document.body.classList.add("no-scroll");
   };
@@ -357,22 +642,19 @@ Hello, I am interested in your drugs: ${name}.
 
   return (
     <>
-      
-      
       <div className="product-card">
         {products.map((product) => (
-          <div key={product.id} className="pro_container"  onClick={() => handleLearnMore(product.id)}>
-            
+          <div
+            key={product.id}
+            className="pro_container"
+            onClick={() => handleLearnMore(product.id)}
+          >
             <img src={product.image} alt={product.name} className="pro_image" />
             <h3>{product.name}</h3>
-            
+
             <p className="pro_price">
               <span></span> <small className="co_price"> {product.price}</small>
             </p>
-           
-
-           
-           
 
             {/* <button
               onClick={() => handleLearnMore(product.id)}
@@ -381,18 +663,19 @@ Hello, I am interested in your drugs: ${name}.
               Learn More
             </button> */}
 
-            
             {showDescription[product.id] && (
               <div
                 className="description-popup"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="content">
-                
                   <div className="pro_header">
-                  <button onClick={() => handleHideDescription(product.id)} className="close_btn">
-                    x
-                  </button>
+                    <button
+                      onClick={() => handleHideDescription(product.id)}
+                      className="close_btn"
+                    >
+                      x
+                    </button>
                     <img
                       src={product.image}
                       alt={product.name}
@@ -404,47 +687,67 @@ Hello, I am interested in your drugs: ${name}.
                       <p className="unit_name">{product.name}</p>
                     </p>
 
-                    {product.Gname && <p className="pro_price">
-                      <span>Generic name </span> <small>{product.Gname}</small>
-                    </p>}
+                    {product.Gname && (
+                      <p className="pro_price">
+                        <span>Generic name </span>{" "}
+                        <small>{product.Gname}</small>
+                      </p>
+                    )}
 
                     <p className="pro_price">
-                      <span>Price </span> <small className="co_price"> {product.price}</small>
+                      <span>Price </span>{" "}
+                      <small className="co_price"> {product.price}</small>
                     </p>
 
                     <p className="pro_price">
                       <span>Brand name </span> <small>{product.Bname}</small>
                     </p>
 
-                    {product.Dform && <p className="pro_price">
-                      <span>Dosage form </span> <small>{product.Dform}</small>
-                    </p>}
+                    {product.Dform && (
+                      <p className="pro_price">
+                        <span>Dosage form </span> <small>{product.Dform}</small>
+                      </p>
+                    )}
 
-                    {product.Dclass && <p className="pro_price">
-                      <span>Drug class</span> <small> {product.Dclass}</small>
-                    </p>}
-                    {product.usage && <p className="pro_use">
-                      <strong>Usage: </strong> <small>{product.usage}</small>
-                    </p>}
+                    {product.Dclass && (
+                      <p className="pro_price">
+                        <span>Drug class</span> <small> {product.Dclass}</small>
+                      </p>
+                    )}
+                    {product.usage && (
+                      <p className="pro_use">
+                        <strong>Usage: </strong> <small>{product.usage}</small>
+                      </p>
+                    )}
                     <p className="pro_use">
                       <strong>Dosage: </strong> <small>{product.Dosage}</small>
                     </p>
-                    <p className="pro_des"> <strong>Prescription: </strong>{product.description}</p>
-                   <p className="pro_use">
-                      <strong>Side Effects: </strong> <small>{product.SideEffects}</small>
+
+                    <p className="pro_des">
+                      {" "}
+                      <strong>Prescription: </strong>
+                      {product.prescription}
+                    </p>
+                    <p className="pro_use">
+                      <strong>Side Effects: </strong>{" "}
+                      <small>{product.SideEffects}</small>
+                    </p>
+                    <p className="pro_use">
+                      <strong>Precaution: </strong>{" "}
+                      <small>{product.precaution}</small>
+                    </p>
+                    <p className="pro_des">
+                      {" "}
+                      <strong>Description: </strong>
+                      {product.description}
                     </p>
                   </div>
 
-                   <div onClick={() => handleHideDescription(product.id)}>
-                   <button onClick={handleOpenForm}
-                   
-                   className="pro_contact"
-                   
-                   >
-              Contact Seller
-            </button>
-                   </div>
-                 
+                  <div onClick={() => handleHideDescription(product.id)}>
+                    <button onClick={handleOpenForm} className="pro_contact">
+                      Contact Seller
+                    </button>
+                  </div>
                 </div>
               </div>
             )}
@@ -457,35 +760,33 @@ Hello, I am interested in your drugs: ${name}.
           <form onSubmit={handleSubmit}>
             <h3>Contact Seller</h3>
             <p></p>
-            
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                placeholder="Product name"
-              />
-            
-         
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                placeholder="Your email"
-              />
-            
-            
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                placeholder="Write something..."
-              />
-            
+
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              placeholder="Product name"
+            />
+
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              placeholder="Your email"
+            />
+
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              placeholder="Write something..."
+            />
+
             <button type="submit" className="what">
               Send via WhatsApp
             </button>
@@ -500,10 +801,6 @@ Hello, I am interested in your drugs: ${name}.
           {autoReply && <p className="auto-reply">{autoReply}</p>}
         </div>
       )}
-     
-     
-
-      
     </>
   );
 };

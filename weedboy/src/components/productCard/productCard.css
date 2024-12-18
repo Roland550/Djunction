@@ -5,9 +5,12 @@ body.no-scroll {
 
 .product-card {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 13px;
-  padding: 10px;
+  padding: 5px;
+  padding-left: 5rem;
   width: 100%;
   background: #f8f9fa;
   overflow: hidden;
@@ -24,9 +27,9 @@ body.no-scroll {
 }
 
 .pro_container img {
-  width: 100%;
+  width: 150px;
   height: 150px;
-  object-fit: "cover";
+  object-fit: initial;
 }
 .pro_container h3 {
   text-align: left;
@@ -117,22 +120,31 @@ body.no-scroll {
 }
 .content .pro_header {
   position: sticky;
+  width: 100%;
+  background: #fff;
+  padding: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 0;
   z-index: 10;
 }
 .content .pro_header img {
-  width: 100%;
+  width: 300px;
   height: 300px;
-
+  
   /* border-radius: 8px 8px 0 0; */
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .pro_body {
+  position: relative;
   width: 100%;
-  height: 90%;
+  height: 100%;
   overflow-y: auto;
   padding: 20px;
-  margin-top: 1rem;
+  margin-top: 8rem;
   scrollbar-width: none;
 }
 .pro_body::-webkit-scrollbar {
